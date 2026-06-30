@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#08080e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Amrit Vela">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFfElEQVR4nO3dS1LbQBhF4TaVAaPsiGIrWRpbobIjRp4lg5SIMGqpW+rnvecbpiq4JR1+t4Uxt9DR8/PPPz0fH/Xc7x+3Ho/b7EGJFy0ir/oARIyYWnFX+aKEjFSlwy76xQgZZ5UKu8gXIWSUcjXsp6sLIGaUdLWnS0ETM2q40tWp8U7IaCV3C5I9oYkZLeX2lhU0MaOHnO6SgyZm9JTaX1LQxIwRpHR4GDQxYyRHPV6+Dw2MZDdopjNGtNdlNGhixshifW4GTcyYwVan7KEh5VvQTGfM5LFXJjSkfAma6YwZrbtlQkPKZ9BMZ8xs6ZcJDSkEDSm3ENhu1PT+9vLt315//e6wEg9MaEghaEghaEghaEh54gUhlDChIcU26K3baUrUjy/GLuj3t5fPi6160dfHp3qMMT96L6AVtwu7thy7ww90bCZ07GKqhR47HoeYQzAKGh6sglaf0u7TOQSjPfSR97eXKhe+VUwq35RXWU3oELymVQh+x2sXdAh6Ww+2Gv9ZBg1dtkGrTGmm81e8KFyZMYJlzbN9I9Zyc3+3Xa27G72oHU8u+6ChxXYPDU3soQs7s5d13iKUxpbjohovxgj8PII+oeUdBeLOQ9AZet4aI+w0BJ1gpHu8hL2PoHecDTknuhaP4WTooHv9kCA3spJr7PnYKUb/wc3wQS9Ge19xi/WMuhaCPqHHp3YeBdTzQvZc20yfoDpV0IvSJzNlEo5wAVuvs+U1KGXIoFs+1Y48lWNqr3mkrU6uIYNe1J5IM8a8qLX2WZ6tYoYOOoR602LGp9MtpY5j5qm8NnzQi5IBqsS8aBH1LOdlmrePvv76Xf2kznLRHtVcd4vzXtI0QS8eT26p6TzTRdtS4nckr57bEUwXdAjnp4ZqzItSv/g721Rem2YPfZV6zGtOx/poygkNxFgE7TaxVD5z5AyLoLeoxrxQP74Y+aAdplIO9fMhH/QWl+nlcpxr0kHP9LbHWraOV3lKSwcNP7JBK0+hElTPj2zQW9y2Gwun47YKGvokg1Z9Oi1N8TxJBr3F6Wl3i8vx2wQNDwQNKXJBK+4La1I7X3JBb3HZPx5xOA8WQcMHQUMKQUMKQUMKQUMKQUMKQUMKQUMKQUMKQUOKRdBq71c4y+E8yAXt8H6FktTOl1zQ8EbQkNL943Qd9nVOem9hmNCQQtCQQtCQQtCQQtCQ0v0uR23uH6nrdvyWE9rlVqHLca7JB608jc5QPx/yQceoTy/144uxCNrtz5y5/Rm7NYug4cMmaJcp7TydQzAKOgT9qN1jDsEs6BB0oybmf+yC3jNr1LOuuwbLoPem1mxx7K3XbTqHYPCj7z1H8Y4cxMxrr8lyQi+OLvqo05qY46wn9CIl3BEimWWdPRH0ysiTb+S1jYSgH6RuM1oENNJaZkHQG3L3ziWD6vnYCgh6x9kXhTmRtXgMJwSdYKS7HYS8j6Az9AybkNMQ9AktwybkPAR9UY24ifg8gi7sTOAEXA5BQ4r1ezmgh6AhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAh5el+/7j1XgRQChMaUggaUggaUggaUp5CCIEXhlBwv3/cmNCQQtCQ8hk02w7MbOmXCQ0pX4JmSmNG626Z0JDyLWimNGby2CsTGlI2g2ZKYwZbnUYnNFFjZLE+d7ccRI0R7XXJHhpSDoNmSmMkRz0mTWiixghSOkzechA1ekrtL2sPTdToIae77BeFRI2Wcnu7FOfz888/V/4/EHN2cF66bce0Rg1Xurp8H5qoUdLVnorGyBYEZ5UajFWmK2EjVeln+KrbBcJGTK2tarP9L3Gjxeutv5vxOPmRnE7yAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFfElEQVR4nO3dS1LbQBhF4TaVAaPsiGIrWRpbobIjRp4lg5SIMGqpW+rnvecbpiq4JR1+t4Uxt9DR8/PPPz0fH/Xc7x+3Ho/b7EGJFy0ir/oARIyYWnFX+aKEjFSlwy76xQgZZ5UKu8gXIWSUcjXsp6sLIGaUdLWnS0ETM2q40tWp8U7IaCV3C5I9oYkZLeX2lhU0MaOHnO6SgyZm9JTaX1LQxIwRpHR4GDQxYyRHPV6+Dw2MZDdopjNGtNdlNGhixshifW4GTcyYwVan7KEh5VvQTGfM5LFXJjSkfAma6YwZrbtlQkPKZ9BMZ8xs6ZcJDSkEDSm3ENhu1PT+9vLt315//e6wEg9MaEghaEghaEghaEh54gUhlDChIcU26K3baUrUjy/GLuj3t5fPi6160dfHp3qMMT96L6AVtwu7thy7ww90bCZ07GKqhR47HoeYQzAKGh6sglaf0u7TOQSjPfSR97eXKhe+VUwq35RXWU3oELymVQh+x2sXdAh6Ww+2Gv9ZBg1dtkGrTGmm81e8KFyZMYJlzbN9I9Zyc3+3Xa27G72oHU8u+6ChxXYPDU3soQs7s5d13iKUxpbjohovxgj8PII+oeUdBeLOQ9AZet4aI+w0BJ1gpHu8hL2PoHecDTknuhaP4WTooHv9kCA3spJr7PnYKUb/wc3wQS9Ge19xi/WMuhaCPqHHp3YeBdTzQvZc20yfoDpV0IvSJzNlEo5wAVuvs+U1KGXIoFs+1Y48lWNqr3mkrU6uIYNe1J5IM8a8qLX2WZ6tYoYOOoR602LGp9MtpY5j5qm8NnzQi5IBqsS8aBH1LOdlmrePvv76Xf2kznLRHtVcd4vzXtI0QS8eT26p6TzTRdtS4nckr57bEUwXdAjnp4ZqzItSv/g721Rem2YPfZV6zGtOx/poygkNxFgE7TaxVD5z5AyLoLeoxrxQP74Y+aAdplIO9fMhH/QWl+nlcpxr0kHP9LbHWraOV3lKSwcNP7JBK0+hElTPj2zQW9y2Gwun47YKGvokg1Z9Oi1N8TxJBr3F6Wl3i8vx2wQNDwQNKXJBK+4La1I7X3JBb3HZPx5xOA8WQcMHQUMKQUMKQUMKQUMKQUMKQUMKQUMKQUMKQUOKRdBq71c4y+E8yAXt8H6FktTOl1zQ8EbQkNL943Qd9nVOem9hmNCQQtCQQtCQQtCQQtCQ0v0uR23uH6nrdvyWE9rlVqHLca7JB608jc5QPx/yQceoTy/144uxCNrtz5y5/Rm7NYug4cMmaJcp7TydQzAKOgT9qN1jDsEs6BB0oybmf+yC3jNr1LOuuwbLoPem1mxx7K3XbTqHYPCj7z1H8Y4cxMxrr8lyQi+OLvqo05qY46wn9CIl3BEimWWdPRH0ysiTb+S1jYSgH6RuM1oENNJaZkHQG3L3ziWD6vnYCgh6x9kXhTmRtXgMJwSdYKS7HYS8j6Az9AybkNMQ9AktwybkPAR9UY24ifg8gi7sTOAEXA5BQ4r1ezmgh6AhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAhhaAh5el+/7j1XgRQChMaUggaUggaUggaUp5CCIEXhlBwv3/cmNCQQtCQ8hk02w7MbOmXCQ0pX4JmSmNG626Z0JDyLWimNGby2CsTGlI2g2ZKYwZbnUYnNFFjZLE+d7ccRI0R7XXJHhpSDoNmSmMkRz0mTWiixghSOkzechA1ekrtL2sPTdToIae77BeFRI2Wcnu7FOfz888/V/4/EHN2cF66bce0Rg1Xurp8H5qoUdLVnorGyBYEZ5UajFWmK2EjVeln+KrbBcJGTK2tarP9L3Gjxeutv5vxOPmRnE7yAAAAAElFTkSuQmCC">
+<title>ਅੰਮ੍ਰਿਤ ਵੇਲਾ · Spiritual Discipline OS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--d:#08080e;--s:#0e0e1a;--s2:#131320;--s3:#1a1a28;--s4:#22223a;--g:#c9a84b;--g2:#e2c069;--gd:rgba(201,168,75,.14);--gg:rgba(201,168,75,.07);--t:#3ecfb3;--p:#8b7fd4;--ro:#e07a8e;--gn:#5bc98a;--am:#e8a44a;--re:#e05555;--bl:#5ba4e8;--tx:#f0ede6;--t2:#9e9a92;--t3:#585450;--b:rgba(201,168,75,.13);--b2:rgba(255,255,255,.055);--b3:rgba(255,255,255,.025);--r:12px;--rl:18px;--rx:26px;--sb:max(20px,env(safe-area-inset-bottom))}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--d);color:var(--tx);-webkit-font-smoothing:antialiased}
+#app{display:flex;flex-direction:column;height:100vh;height:100dvh;max-width:430px;margin:0 auto;background:var(--d);overflow:hidden}
+.vb{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:calc(var(--sb) + 74px)}
+.vb::-webkit-scrollbar{display:none}
+.view{display:none}.view.active{display:block}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:max(13px,env(safe-area-inset-top) + 8px) 18px 10px;border-bottom:1px solid var(--b3);flex-shrink:0;z-index:20}
+.wm .gur{font-size:15px;font-weight:700;color:var(--g)}.wm .eng{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.14em}
+.tr{display:flex;gap:8px;align-items:center}
+.sch{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:20px;background:var(--gd);border:1px solid var(--b);font-size:12px;font-weight:800;color:var(--g);cursor:pointer}
+.ib{width:34px;height:34px;border-radius:50%;background:var(--s2);border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;transition:.18s}
+.bnav{display:flex;flex-shrink:0;background:var(--s);border-top:1px solid var(--b2);padding-bottom:var(--sb);z-index:20;position:relative}
+.bnav::after{content:'';position:absolute;bottom:calc(-1 * env(safe-area-inset-bottom));left:0;right:0;height:env(safe-area-inset-bottom);background:var(--s)}
+.nb{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 2px 5px;cursor:pointer;border:none;background:none;color:var(--t3);transition:.2s}
+.nb .ni{font-size:19px;transition:transform .2s}.nb .nl{font-size:8px;text-transform:uppercase;letter-spacing:.07em;font-weight:600}
+.nb.active{color:var(--g)}.nb.active .ni{transform:scale(1.1)}
+.shdr{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 8px}
+.stit2{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.13em}
+.sact{font-size:11px;color:var(--g);cursor:pointer;font-weight:600}
+.hero{margin:12px 16px 0;background:var(--s);border:1px solid var(--b);border-radius:var(--rx);padding:18px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50px;right:-50px;width:160px;height:160px;background:radial-gradient(circle,rgba(201,168,75,.1),transparent 70%);pointer-events:none}
+.hdate{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.hscores{display:flex}.sblk{flex:1}.sblk+.sblk{border-left:1px solid var(--b2);padding-left:14px;margin-left:14px}
+.sey{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.snum{font-size:36px;font-weight:800;line-height:1;letter-spacing:-.03em}.snum.g{color:var(--g)}
+.sden{font-size:14px;font-weight:400;color:var(--t3)}.ssub{font-size:9px;color:var(--t3);margin-top:3px}
+.ssub.ok{color:var(--gn)}.ssub.warn{color:var(--am)}.ssub.bad{color:var(--re)}
+.hrr{display:flex;align-items:center;gap:12px;margin-top:14px}
+.rw{position:relative;width:52px;height:52px;flex-shrink:0}.rw svg{transform:rotate(-90deg)}
+.rc{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:11px;font-weight:800;color:var(--g)}
+.ri{flex:1}.rl{font-size:9px;color:var(--t3);margin-bottom:5px}.rst{display:flex;gap:14px}
+.rv{font-size:16px;font-weight:800;color:var(--tx)}.rlbl{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.08em}
+.dstrip{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:12px 16px 4px}
+.dstrip::-webkit-scrollbar{display:none}
+.dchip{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 11px;border-radius:12px;cursor:pointer;background:var(--s2);border:1px solid var(--b2)}
+.dchip.today{background:var(--gd);border-color:var(--b)}.dchip .dd{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.08em}
+.dchip .dn{font-size:14px;font-weight:700;color:var(--tx)}.dchip.today .dn{color:var(--g)}
+.dchip .dot{width:5px;height:5px;border-radius:50%;background:var(--s4)}
+.dchip.done .dot{background:var(--gn)}.dchip.partial .dot{background:var(--am)}.dchip.missed .dot{background:var(--re)}
+.pbanner{background:linear-gradient(135deg,rgba(91,201,138,.18),rgba(91,201,138,.04));border:1px solid rgba(91,201,138,.28);border-radius:var(--rl);padding:13px 16px;margin:10px 16px;display:none;align-items:center;gap:12px}
+.pbanner.show{display:flex}.pbi{font-size:26px}.pbtt{font-size:14px;font-weight:800;color:var(--gn)}.pbts{font-size:10px;color:var(--t3);margin-top:2px}
+.needs{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);padding:11px 14px;margin:0 16px 10px;display:none}
+.needs.show{display:block}.ntitle{font-size:9px;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:7px}
+.nlist{display:flex;flex-wrap:wrap;gap:5px}
+.nc{padding:4px 10px;border-radius:10px;font-size:10px;font-weight:600;background:var(--s3);color:var(--t3);border:1px solid var(--b2)}
+.bcard{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);padding:14px;margin:0 16px 10px}
+.bchdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+.bctt{font-size:13px;font-weight:700}.bcpct{font-size:11px;font-weight:800;color:var(--g)}
+.bbar{width:100%;height:4px;background:var(--s3);border-radius:2px;margin-bottom:11px;overflow:hidden}
+.bfill{height:100%;border-radius:2px;background:var(--g);transition:width .5s cubic-bezier(.4,0,.2,1)}
+.bi{display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid var(--b3);cursor:pointer}
+.bi:last-child{border:none;padding-bottom:0}.bi:first-child{padding-top:0}
+.bchk{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--t3);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s;font-size:11px;font-weight:800}
+.bchk.on{border-color:var(--g);background:var(--g);color:var(--d)}
+.bname{font-size:15px;font-weight:600;color:var(--tx);line-height:1.35}.bname.done{color:var(--t3)}
+.bgur{font-size:9px;color:var(--t3);margin-top:2px}.bstr{font-size:9px;font-weight:700;color:var(--am);background:rgba(232,164,74,.12);padding:2px 8px;border-radius:8px;flex-shrink:0}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 16px 10px}
+.sblck{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);padding:14px}
+.sblck.ok{border-color:rgba(91,201,138,.28)}.slbl{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:7px}
+.scnt{font-size:26px;font-weight:800;color:var(--tx);line-height:1}.sden2{font-size:12px;font-weight:400;color:var(--t3)}
+.sbar{width:100%;height:3px;background:var(--s3);border-radius:2px;margin:9px 0 11px;overflow:hidden}
+.sfill{height:100%;border-radius:2px;background:var(--t);transition:width .4s}.sfill.ok{background:var(--gn)}
+.sbtns{display:flex;gap:5px}
+.qb{flex:1;padding:6px 0;border-radius:8px;background:var(--s3);border:1px solid var(--b2);color:var(--t2);font-size:11px;font-weight:700;cursor:pointer;transition:.15s;text-align:center}
+.qb:active{transform:scale(.94)}.qb.p{background:var(--gd);border-color:var(--b);color:var(--g)}
+.pr{display:flex;align-items:center;gap:12px;background:var(--s);border:1px solid var(--b2);border-radius:var(--r);padding:12px 14px;margin:0 16px 7px;cursor:pointer;transition:.18s}
+.pr.ok{border-color:rgba(91,201,138,.22)}.pr:active{transform:scale(.99)}
+.pio{font-size:22px;flex-shrink:0;width:38px;text-align:center}.pinfo{flex:1;min-width:0}
+.pnm{font-size:13px;font-weight:600}.pmt{font-size:10px;color:var(--t3);margin-top:2px}
+.prgt{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0}
+.ck{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--t3);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;transition:.2s}
+.ck.on{border-color:var(--gn);background:rgba(91,201,138,.15);color:var(--gn)}
+.stag{font-size:9px;font-weight:700;color:var(--am)}.tpl{font-size:10px;font-weight:600;padding:2px 8px;border-radius:8px;background:var(--s3);color:var(--t2)}
+.tpl.run{background:var(--gd);color:var(--g)}
+.sc2{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);margin:0 16px 10px;padding:14px}
+.dc{background:var(--s);border:1px solid rgba(224,85,85,.13);border-radius:var(--rl);margin:0 16px 10px;padding:14px}
+.dch{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.dt{font-size:10px;font-weight:700;color:var(--re)}
+.di{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--b3)}
+.di:last-child{border:none;padding-bottom:0}
+.diico{font-size:16px;flex-shrink:0;width:24px;text-align:center}.dilbl{flex:1;font-size:12px;color:var(--t2)}.div2{font-size:12px;font-weight:700;color:var(--re)}
+.tlw{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);margin:0 16px 10px;padding:0 14px}
+.tli{display:flex;gap:11px;align-items:flex-start;padding:10px 0;position:relative}
+.tli+.tli::before{content:'';position:absolute;left:16px;top:0;width:1px;height:10px;background:var(--b2)}
+.tldel{font-size:11px;color:var(--t3);cursor:pointer;padding:8px 4px;flex-shrink:0;opacity:.4;align-self:center}
+.tldel:active{opacity:1;color:var(--re)}
+.tldot{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--s2);border:1px solid var(--b2);z-index:1}
+.tlbd{flex:1;padding-top:5px}.tlev{font-size:12px;font-weight:500}.tlt{font-size:9px;color:var(--t3);margin-top:2px}
+.cbi{display:flex;align-items:center;gap:10px;background:var(--s);border:1px solid var(--b2);border-radius:var(--r);padding:11px 13px;margin:0 16px 6px}
+.cck{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--t3);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex-shrink:0;cursor:pointer;transition:.2s}
+.cck.on{border-color:var(--t);background:rgba(62,207,179,.15);color:var(--t)}
+.cbn{flex:1;font-size:13px;font-weight:500}.cbnote{font-size:9px;color:var(--t3);margin-top:1px}
+.cbpts{font-size:9px;font-weight:800;color:var(--g);background:var(--gd);padding:3px 8px;border-radius:8px;flex-shrink:0;cursor:pointer}
+.addb{display:flex;align-items:center;gap:10px;background:var(--s2);border:1px dashed var(--b2);border-radius:var(--r);padding:11px 14px;margin:0 16px 8px;cursor:pointer;color:var(--t3);font-size:13px;font-weight:500}
+.addb:hover{border-color:var(--b);color:var(--g)}
+.sh{background:linear-gradient(135deg,#0b0b18,#0e0e24);border:1px solid rgba(139,127,212,.22);border-radius:var(--rx);margin:14px 16px 10px;padding:22px;text-align:center;position:relative;overflow:hidden}
+.sh::before{content:'';position:absolute;top:-70px;left:50%;transform:translateX(-50%);width:220px;height:220px;background:radial-gradient(circle,rgba(139,127,212,.18),transparent 65%);pointer-events:none}
+.sey2{font-size:8px;color:var(--p);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:10px}
+.sbig{font-size:62px;font-weight:300;color:var(--tx);letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:1}
+.sunit{font-size:12px;color:var(--t3);margin:5px 0 18px}
+.stap{width:88px;height:88px;border-radius:50%;margin:0 auto;background:linear-gradient(135deg,rgba(139,127,212,.25),rgba(139,127,212,.1));border:1.5px solid rgba(139,127,212,.4);display:flex;align-items:center;justify-content:center;font-size:34px;cursor:pointer;transition:.1s;user-select:none}
+.stap:active{transform:scale(.9)}
+.mdots{display:flex;gap:5px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.md{width:10px;height:10px;border-radius:50%;background:var(--s4);transition:.3s}.md.lit{background:var(--p)}
+.th{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);padding:18px;margin:0 16px 10px;text-align:center}
+.tbig{font-size:48px;font-weight:300;color:var(--tx);letter-spacing:-.02em;font-variant-numeric:tabular-nums;transition:color .3s}
+.tbig.run{color:var(--g)}.tc{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.tprog{width:100%;height:4px;background:var(--s3);border-radius:2px;margin:10px 0;overflow:hidden}
+.tpf{height:100%;border-radius:2px;transition:width .5s}
+.tbtn{padding:9px 20px;border-radius:20px;border:none;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:.2s}
+.tbtn.p{background:var(--g);color:var(--d)}.tbtn.s{background:var(--s3);color:var(--t2);border:1px solid var(--b2)}
+.tbtn:active{transform:scale(.95)}
+.sg2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 16px 10px}
+.sg3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:0 16px 10px}
+.xc{background:var(--s);border:1px solid var(--b2);border-radius:var(--r);padding:11px 12px}
+.xl{font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;font-weight:700}
+.xv{font-size:22px;font-weight:800;color:var(--tx);line-height:1}
+.xv.g{color:var(--g)}.xv.t{color:var(--t)}.xv.gn{color:var(--gn)}.xv.p{color:var(--p)}.xv.am{color:var(--am)}
+.xs{font-size:9px;color:var(--t3);margin-top:3px}
+.cgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin:0 16px}
+.cdn{font-size:8px;color:var(--t3);text-align:center;padding:4px 0;text-transform:uppercase;letter-spacing:.06em}
+.cday{aspect-ratio:1;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;cursor:pointer;background:var(--s2);color:var(--t3)}
+.cday.today{border:1.5px solid var(--g);color:var(--g);font-weight:800}.cday.perfect{background:rgba(91,201,138,.22);color:var(--gn)}
+.cday.strong{background:rgba(91,164,232,.22);color:var(--bl)}.cday.partial{background:rgba(232,164,72,.18);color:var(--am)}
+.cday.missed{background:rgba(224,85,85,.13);color:var(--re)}.cday.empty{background:transparent;cursor:default}
+.cl{display:flex;gap:10px;padding:10px 16px;flex-wrap:wrap}
+.cli{display:flex;align-items:center;gap:5px;font-size:9px;color:var(--t3)}.cld{width:10px;height:10px;border-radius:3px}
+.hmw{overflow-x:auto;scrollbar-width:none;padding:0 16px 8px}
+.hmw::-webkit-scrollbar{display:none}.hm{display:flex;gap:3px}
+.hmc{display:flex;flex-direction:column;gap:3px}
+.hms{width:11px;height:11px;border-radius:2px;background:var(--s3);cursor:pointer}
+.hms.l1{background:rgba(201,168,75,.18)}.hms.l2{background:rgba(201,168,75,.42)}.hms.l3{background:rgba(201,168,75,.68)}.hms.l4{background:var(--g)}.hms.pf{background:var(--gn)}
+.bcw{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);margin:0 16px 10px;padding:14px}
+.bci{display:flex;align-items:flex-end;gap:5px;height:80px}
+.bcc{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.bcb{width:100%;border-radius:4px 4px 0 0;min-height:3px;transition:height .6s cubic-bezier(.4,0,.2,1)}
+.bcl{font-size:8px;color:var(--t3)}
+.trow{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--b3)}
+.trow:last-child{border:none;padding-bottom:0}
+.tico{font-size:16px;flex-shrink:0;width:24px;text-align:center}.tlabel{flex:1;font-size:12px;color:var(--t2)}
+.tbarw{width:70px}.tbarbg{width:100%;height:4px;background:var(--s3);border-radius:2px;overflow:hidden}.tbarf{height:100%;border-radius:2px}
+.tvl{font-size:12px;font-weight:700;min-width:50px;text-align:right}
+.ltrow{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--b3)}
+.ltrow:last-child{border:none}.ltlbl{font-size:12px;color:var(--t2)}.ltval{font-size:15px;font-weight:800;color:var(--g)}
+.sbrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--b3)}
+.sbrow:last-child{border:none}.sblabel{flex:1;font-size:11px;color:var(--t2)}
+.sbbw{width:80px;height:4px;background:var(--s3);border-radius:2px;overflow:hidden}
+.sbbf{height:100%;border-radius:2px;background:var(--g)}.sbpts{font-size:12px;font-weight:800;color:var(--g);min-width:38px;text-align:right}
+.cc{background:rgba(224,85,85,.06);border:1px solid rgba(224,85,85,.14);border-radius:var(--r);padding:12px 14px;margin:0 16px 10px;font-size:11px;color:var(--t2);line-height:1.7}
+.cc strong{color:var(--ro)}
+.pj{background:linear-gradient(135deg,rgba(139,127,212,.1),rgba(139,127,212,.03));border:1px solid rgba(139,127,212,.18);border-radius:var(--r);padding:13px 14px;margin:0 16px 8px;display:flex;align-items:center;gap:12px}
+.pjico{font-size:22px;flex-shrink:0}.pjlbl{font-size:10px;color:var(--t3);margin-bottom:3px}.pjval{font-size:17px;font-weight:800;color:var(--p)}.pjsub{font-size:9px;color:var(--t3);margin-top:2px}
+.ach{display:flex;align-items:center;gap:12px;background:var(--s);border:1px solid var(--b2);border-radius:var(--r);padding:12px 14px;margin:0 16px 7px}
+.ach.e{border-color:rgba(201,168,75,.28);background:linear-gradient(135deg,rgba(201,168,75,.05),var(--s))}
+.ai{font-size:26px;flex-shrink:0}.aname{font-size:13px;font-weight:700}.adesc{font-size:10px;color:var(--t3);margin-top:2px}
+.ab{font-size:9px;font-weight:700;padding:3px 9px;border-radius:10px;flex-shrink:0;background:var(--gd);color:var(--g);border:1px solid var(--b)}
+.ab.lk{background:var(--s3);color:var(--t3);border-color:var(--b2)}
+.je{background:var(--s);border:1px solid var(--b2);border-radius:var(--r);padding:13px 15px;margin:0 16px 7px;cursor:pointer}
+.jhdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:7px}
+.jdate{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.09em}.jmood{font-size:18px}
+.jtag{font-size:9px;font-weight:700;padding:2px 8px;border-radius:8px;margin-top:4px;display:inline-block}
+.jtext{font-size:12px;color:var(--t2);line-height:1.65;margin-top:7px}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:100;display:flex;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity .25s}
+.overlay.open{opacity:1;pointer-events:all}
+.sheet{width:100%;max-width:430px;margin:0 auto;background:var(--s);border-radius:24px 24px 0 0;border:1px solid var(--b2);padding:18px 18px var(--sb);transform:translateY(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);max-height:91dvh;overflow-y:auto;scrollbar-width:none}
+.sheet::-webkit-scrollbar{display:none}.overlay.open .sheet{transform:translateY(0)}
+.shdl{width:36px;height:3px;border-radius:2px;background:var(--s4);margin:0 auto 16px}
+.stit{font-size:17px;font-weight:800;color:var(--tx);margin-bottom:14px}
+.ff{margin-bottom:12px}.fl{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;display:block;margin-bottom:5px}
+input[type=text],input[type=number],input[type=time],textarea,select{width:100%;padding:10px 12px;background:var(--s2);border:1px solid var(--b2);border-radius:10px;color:var(--tx);font-family:inherit;font-size:14px;outline:none;transition:border-color .2s;-webkit-appearance:none}
+input:focus,textarea:focus,select:focus{border-color:var(--b)}
+textarea{resize:none;min-height:80px;line-height:1.6}
+.btnp{width:100%;padding:13px;border-radius:13px;background:var(--g);color:var(--d);border:none;font-family:inherit;font-size:15px;font-weight:800;cursor:pointer;transition:.2s;margin-top:10px}
+.btnp:active{transform:scale(.98)}
+.btns{width:100%;padding:12px;border-radius:13px;background:var(--s2);color:var(--t2);border:1px solid var(--b2);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:.2s;margin-top:6px}
+.trow2{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--b3)}
+.ti .tn{font-size:13px;color:var(--tx)}.ti .td{font-size:10px;color:var(--t3);margin-top:1px}
+.tgl{width:42px;height:24px;border-radius:12px;background:var(--s4);cursor:pointer;position:relative;transition:background .2s;flex-shrink:0}
+.tgl.on{background:var(--g)}.tth{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--s3);transition:all .2s}
+.tgl.on .tth{left:21px;background:var(--d)}
+.vrow{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--b3)}
+.vrow:last-child{border:none}
+.vname{font-size:13px;color:var(--tx);font-weight:600}.vsub{font-size:9px;color:var(--t3);margin-top:1px}
+.vctr{display:flex;align-items:center;gap:9px}
+.vbtn{width:24px;height:24px;border-radius:50%;background:var(--s3);border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;cursor:pointer;color:var(--t2);flex-shrink:0}
+.vbtn:active{transform:scale(.9)}.vbtn.p{color:var(--re);border-color:rgba(224,85,85,.3)}
+.vcnt{width:20px;text-align:center;font-size:14px;font-weight:800;color:var(--tx)}
+.pill-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.pill{padding:6px 13px;border-radius:20px;border:1px solid var(--b2);font-size:11px;color:var(--t3);cursor:pointer;background:var(--s2);transition:.18s;font-weight:500}
+.pill.on{border-color:var(--g);color:var(--g);background:var(--gd)}
+.chip-bar{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:0 16px 2px}
+.chip-bar::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;padding:6px 13px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;background:var(--s2);border:1px solid var(--b2);color:var(--t3);white-space:nowrap}
+.chip.on{background:var(--gd);border-color:var(--b);color:var(--g)}
+.tabbar{display:flex;gap:4px;background:var(--s2);padding:4px;border-radius:13px;margin:0 16px 12px}
+.tb{flex:1;text-align:center;padding:7px;border-radius:9px;font-size:10px;font-weight:700;cursor:pointer;color:var(--t3);transition:.2s}
+.tb.on{background:var(--g);color:var(--d)}
+.prow2{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--b3);font-size:11px}
+.prw-lbl{color:var(--t2)}.prw-val{font-weight:700;color:var(--re)}
+.divider{height:1px;background:var(--b2);margin:12px 16px}
+.gd{height:1px;background:linear-gradient(90deg,transparent,var(--b),transparent);margin:14px 16px;opacity:.5}
+.seccard{background:var(--s);border:1px solid var(--b2);border-radius:var(--rl);margin:0 16px 10px;padding:14px}
+.hg{font-size:9px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin:14px 0 8px}
+.pav{width:70px;height:70px;border-radius:50%;margin:0 auto 10px;background:linear-gradient(135deg,var(--gd),rgba(201,168,75,.28));border:2px solid var(--b);display:flex;align-items:center;justify-content:center;font-size:28px}
+.pname{text-align:center;font-size:20px;font-weight:800}.ptitle{text-align:center;font-size:9px;color:var(--g);text-transform:uppercase;letter-spacing:.13em;margin-top:4px}
+.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--s3);border:1px solid var(--b2);border-radius:22px;padding:9px 18px;font-size:13px;font-weight:600;color:var(--tx);z-index:200;opacity:0;transition:all .28s;white-space:nowrap;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.empty{text-align:center;padding:34px 20px}.ei{font-size:34px;margin-bottom:10px}
+.et{font-size:15px;font-weight:700;margin-bottom:6px}.es{font-size:11px;color:var(--t3);line-height:1.6}
+.fade-in{animation:fi .3s ease}@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+</style>
+</head>
+<body>
+<div id="app">
+<div class="topbar">
+  <div class="wm"><div class="gur">ਅੰਮ੍ਰਿਤ ਵੇਲਾ</div><div class="eng">Spiritual Discipline OS</div></div>
+  <div class="tr">
+    <div class="sch" onclick="openSh('profileSh')">🔥 <span id="hstr">0</span>d</div>
+    <div class="ib" onclick="openSh('settingsSh')">⚙️</div>
+  </div>
+</div>
+
+<div class="vb" id="vb">
+
+<!-- HOME -->
+<div class="view active" id="view-home">
+  <div class="hero fade-in">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <div class="hdate" id="hdate"></div>
+    <div style="text-align:right;flex-shrink:0">
+      <div id="liveclock" style="font-size:20px;font-weight:800;color:var(--g);font-variant-numeric:tabular-nums;letter-spacing:-.02em"></div>
+      <div id="avtag" style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-top:1px"></div>
+    </div>
+  </div>
+    <div id="sec-score">
+    <div class="hscores">
+      <div class="sblk"><div class="sey">Weighted Score</div><div class="snum g" id="wsd">0<span class="sden">/100</span></div><div class="ssub" id="wssub">0/5 Banis</div></div>
+      <div class="sblk"><div class="sey">Discipline Score</div><div class="snum" id="dsd">0<span class="sden">/100</span></div><div class="ssub" id="dspen">No penalty</div></div>
+    </div>
+    <div class="hrr">
+      <div class="rw">
+        <svg width="52" height="52" viewBox="0 0 52 52"><circle cx="26" cy="26" r="21" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="5"/><circle id="pr" cx="26" cy="26" r="21" fill="none" stroke="#c9a84b" stroke-width="5" stroke-dasharray="0 132" stroke-linecap="round" style="transition:stroke-dasharray .8s ease"/></svg>
+        <div class="rc" id="rpct">0%</div>
+      </div>
+      <div class="ri"><div class="rl">Today's Completion</div><div class="rst"><div><div class="rv" id="hstr2">0d</div><div class="rlbl">Streak</div></div><div><div class="rv" id="hperf">0</div><div class="rlbl">Perfect</div></div><div><div class="rv" id="hbest">0d</div><div class="rlbl">Best</div></div></div></div>
+    </div>
+    </div>
+  </div>
+  <div class="dstrip" id="dstrip"></div>
+  <div class="pbanner" id="pbanner"><div class="pbi">🌟</div><div><div class="pbtt">Perfect Day!</div><div class="pbts">All practices complete · Waheguru Ji Ka Khalsa!</div></div></div>
+  <div class="needs" id="needs">
+    <div class="ntitle">Still needed for Perfect Day</div>
+    <div class="nlist" id="nlist"></div>
+    <div id="needs-footer" style="font-size:9px;color:var(--t3);margin-top:8px;text-align:right"></div>
+  </div>
+
+  <div id="sec-banis">
+  <div class="shdr"><div class="stit2">📖 Daily Bani Tracker</div><div class="sact" onclick="doTab('banis')">Analytics</div></div>
+  <div class="bcard">
+    <div class="bchdr"><div class="bctt">Five Daily Banis</div><div class="bcpct" id="bpct">0/5</div></div>
+    <div class="bbar"><div class="bfill" id="bfill" style="width:0%"></div></div>
+    <div id="blist"></div>
+  </div>
+  </div>
+
+  <div id="sec-nitnem">
+  <div class="shdr"><div class="stit2">🙏 Nitnem</div><div class="sact" onclick="openSh('nitnemSh')">Details</div></div>
+  <div class="bcard" style="border-color:rgba(62,207,179,.14)">
+    <div class="bchdr"><div class="bctt" style="color:var(--t)">Morning Nitnem</div><div class="bcpct" id="npct" style="color:var(--t)">0/5</div></div>
+    <div class="bbar"><div class="bfill" id="nfill" style="width:0%;background:var(--t)"></div></div>
+    <div id="nlist2"></div>
+  </div>
+  </div>
+
+  <div id="sec-sehaj">
+  <div class="shdr"><div class="stit2">📜 Sehaj Paath</div><div class="sact" id="stotal">0 angs today</div></div>
+  <div class="sgrid" id="sgrid"></div>
+  </div>
+
+  <div id="sec-ch">
+  <div class="shdr"><div class="stit2">📝 Chritropakhyan</div><div class="sact" onclick="openSh('chSh')">Goal</div></div>
+  <div class="sc2">
+    <div style="display:flex;align-items:center;margin-bottom:10px">
+      <div style="flex:1"><div style="font-size:22px;font-weight:800" id="chd">0<span style="font-size:13px;color:var(--t3)" id="chtd">/5</span></div><div style="font-size:9px;color:var(--t3);margin-top:2px">Angs today</div></div>
+      <div style="text-align:right"><div style="font-size:9px;color:var(--am);font-weight:700">🔥 <span id="chstr">0</span>d</div><div style="font-size:9px;color:var(--t3);margin-top:2px">Lifetime: <span id="chlt" style="color:var(--g);font-weight:800">0</span></div></div>
+    </div>
+    <div class="bbar"><div class="bfill" id="chbar" style="width:0%;background:var(--ro)"></div></div>
+    <div style="display:flex;gap:6px;margin-top:10px">
+      <div class="qb p" onclick="addCh(1)">+1</div><div class="qb" onclick="addCh(5)">+5</div><div class="qb" onclick="addCh(10)">+10</div><div class="qb" style="color:var(--ro)" onclick="addCh(-1)">−1</div>
+    </div>
+  </div>
+  </div>
+
+  <div id="sec-sim">
+  <div class="shdr"><div class="stit2">📿 Simran</div><div class="sact" onclick="goView('simran')">Full View →</div></div>
+  <div class="pr" id="sqr" onclick="goView('simran')">
+    <div class="pio">📿</div><div class="pinfo"><div class="pnm">Waheguru Simran</div><div class="pmt" id="sqm">0h 0m · Goal: 3h</div></div>
+    <div class="prgt"><div class="ck" id="sqck">○</div><div class="tpl" id="sqpl">Not started</div></div>
+  </div>
+  </div>
+
+  <div id="sec-gym">
+  <div class="shdr"><div class="stit2">💪 Gym</div></div>
+  <div class="pr" id="gymr" onclick="togGym()">
+    <div class="pio">💪</div><div class="pinfo"><div class="pnm">Training Session</div><div class="pmt" id="gymm">Tap to log</div></div>
+    <div class="prgt"><div class="ck" id="gymck">○</div><div class="stag">🔥 <span id="gymstr">0</span>d</div></div>
+  </div>
+  </div>
+
+  <div id="sec-music-hdr"><div class="shdr"><div class="stit2">🎵 Music Practice</div><div class="sact" onclick="goView('practice')">Timers →</div></div></div>
+  <div id="sec-vaja">
+  <div class="pr" id="vajar" onclick="goView('practice')">
+    <div class="pio">🎹</div><div class="pinfo"><div class="pnm">Vaja — Harmonium</div><div class="pmt" id="vajam">0 / 45 min</div></div>
+    <div class="prgt"><div class="ck" id="vajack">○</div><div class="tpl" id="vajapl">0:00</div></div>
+  </div>
+  </div>
+  <div id="sec-tabla">
+  <div class="pr" id="tablar" onclick="goView('practice')">
+    <div class="pio">🥁</div><div class="pinfo"><div class="pnm">Tabla</div><div class="pmt" id="tablam">0 / 30 min</div></div>
+    <div class="prgt"><div class="ck" id="tablack">○</div><div class="tpl" id="tablapl">0:00</div></div>
+  </div>
+  </div>
+
+  <div id="sec-cb">
+  <div class="shdr"><div class="stit2">✨ Additional Banis</div><div class="sact" onclick="openAddBani()">+ Add</div></div>
+  <div id="cblist"></div>
+  <div class="addb" onclick="openAddBani()"><span style="font-size:16px">＋</span> Add Custom Bani</div>
+  </div>
+
+  <div id="sec-dist">
+  <div class="shdr"><div class="stit2">🚫 Distractions</div><div class="sact" onclick="openSh('distSh')">+ Log</div></div>
+  <div class="dc">
+    <div class="dch"><div class="stit2">Today's Screen Time</div><div class="dt" id="dtotal">None logged ✓</div></div>
+    <div id="dtlist"></div>
+    <div style="margin-top:8px"><div class="qb" style="width:100%;text-align:center" onclick="openSh('distSh')">+ Log Distraction</div></div>
+  </div>
+  </div>
+
+  <div id="sec-vikar">
+  <div class="shdr"><div class="stit2">⚖️ Panj Vikar</div><div class="sact" id="vikarpensub">−0 pts today</div></div>
+  <div class="sc2" id="vikarcard">
+    <div id="vikarlist"></div>
+  </div>
+  </div>
+
+  <div id="sec-tl">
+  <div class="shdr"><div class="stit2">⏱ Daily Timeline</div></div>
+  <div class="tlw" id="tllist"></div>
+  </div>
+</div>
+
+
+<!-- SIMRAN -->
+<div class="view" id="view-simran">
+  <div style="height:12px"></div>
+  <div id="simran-empty" style="display:none;text-align:center;padding:60px 20px;color:var(--t3)">
+    <div style="font-size:32px;margin-bottom:10px">📿</div>
+    <div style="font-size:13px;font-weight:600;color:var(--t2)">Simran tracking is turned off</div>
+    <div style="font-size:11px;margin-top:6px">Turn it back on anytime in Settings → Active Categories</div>
+    <button class="btns" style="margin-top:16px" onclick="openSh('settingsSh')">Open Settings</button>
+  </div>
+  <div id="simran-content">
+  <div class="sh fade-in">
+    <div class="sey2">Waheguru Simran Counter</div>
+    <div class="sbig" id="simcnt">0</div>
+    <div class="sunit"><span id="simmlbl">0 malas · 0/108</span></div>
+    <div class="stap" id="simtap" onclick="tapSim()">🙏</div>
+    <div class="mdots" id="mdots"></div>
+  </div>
+  <div class="th">
+    <div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px">Session Timer · Goal: <span id="sglbl">3h</span></div>
+    <div class="tbig" id="simtimer">0:00:00</div>
+    <div class="tprog"><div class="tpf" id="simtpf" style="width:0%;background:var(--p)"></div></div>
+    <div class="tc">
+      <button class="tbtn s" onclick="simReset()">Reset</button>
+      <button class="tbtn s" onclick="openManual('simran')">+ Manual</button>
+      <button class="tbtn p" id="simtbtn" onclick="simToggle()">Start</button>
+    </div>
+  </div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Today</div><div class="xv g" id="simtv">0m</div><div class="xs" id="simgoallbl">of 3h goal</div></div>
+    <div class="xc"><div class="xl">This Week</div><div class="xv t" id="simwv">0h</div></div>
+    <div class="xc"><div class="xl">Streak</div><div class="xv" id="simstrv">0d</div></div>
+    <div class="xc"><div class="xl">Lifetime</div><div class="xv p" id="simltv">0h</div></div>
+  </div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">This Month</div><div class="xv am" id="simmov">0h</div></div>
+    <div class="xc"><div class="xl">Daily Avg</div><div class="xv" id="simavg">0m</div><div class="xs">this week</div></div>
+    <div class="xc"><div class="xl">Longest Session</div><div class="xv" id="sim-long-v">0m</div></div>
+    <div class="xc"><div class="xl">Avg Per Week</div><div class="xv t" id="sim-wkavg">0h</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Sessions Today</div></div>
+  <div class="seccard" id="simsess" style="padding:0 14px"></div>
+  </div>
+</div>
+
+<!-- PRACTICE -->
+<div class="view" id="view-practice">
+  <div style="height:12px"></div>
+  <div id="practice-empty" style="display:none;text-align:center;padding:60px 20px;color:var(--t3)">
+    <div style="font-size:32px;margin-bottom:10px">🎵</div>
+    <div style="font-size:13px;font-weight:600;color:var(--t2)">Music practice tracking is turned off</div>
+    <div style="font-size:11px;margin-top:6px">Turn Vaja or Tabla back on anytime in Settings → Active Categories</div>
+    <button class="btns" style="margin-top:16px" onclick="openSh('settingsSh')">Open Settings</button>
+  </div>
+  <div id="sec-pvaja">
+  <div class="shdr"><div class="stit2">🎹 Vaja — Harmonium</div><div class="sact" onclick="openSh('vajaSet')">Settings</div></div>
+  <div class="th">
+    <div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px">Target: <span id="vajatlbl">45 min</span></div>
+    <div class="tbig" id="vajat">0:00</div>
+    <div class="tprog"><div class="tpf" id="vajatpf" style="width:0%;background:var(--g)"></div></div>
+    <div class="tc"><button class="tbtn s" onclick="resetPT('vaja')">Reset</button><button class="tbtn s" onclick="openManual('vaja')">+ Manual</button><button class="tbtn p" id="vajabtn" onclick="togPT('vaja')">Start</button></div>
+  </div>
+  <div class="sg3">
+    <div class="xc"><div class="xl">Today</div><div class="xv g" id="vajatd">0m</div></div>
+    <div class="xc"><div class="xl">Streak</div><div class="xv" id="vajastr">0d</div></div>
+    <div class="xc"><div class="xl">Lifetime</div><div class="xv t" id="vajalt">0h</div></div>
+  </div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">This Week</div><div class="xv am" id="vajawk">0m</div></div>
+    <div class="xc"><div class="xl">This Month</div><div class="xv" id="vajamo">0h</div></div>
+  </div>
+  </div>
+  <div class="gd"></div>
+  <div id="sec-ptabla">
+  <div class="shdr"><div class="stit2">🥁 Tabla</div><div class="sact" onclick="openSh('tablaSet')">Settings</div></div>
+  <div class="th">
+    <div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px">Target: <span id="tablatlbl">30 min</span></div>
+    <div class="tbig" id="tablat">0:00</div>
+    <div class="tprog"><div class="tpf" id="tablatpf" style="width:0%;background:var(--p)"></div></div>
+    <div class="tc"><button class="tbtn s" onclick="resetPT('tabla')">Reset</button><button class="tbtn s" onclick="openManual('tabla')">+ Manual</button><button class="tbtn p" id="tablabtn" onclick="togPT('tabla')">Start</button></div>
+  </div>
+  <div class="sg3">
+    <div class="xc"><div class="xl">Today</div><div class="xv p" id="tablatd">0m</div></div>
+    <div class="xc"><div class="xl">Streak</div><div class="xv" id="tablastr">0d</div></div>
+    <div class="xc"><div class="xl">Lifetime</div><div class="xv t" id="tablalt">0h</div></div>
+  </div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">This Week</div><div class="xv am" id="tablawk">0m</div></div>
+    <div class="xc"><div class="xl">This Month</div><div class="xv" id="tablamo">0h</div></div>
+  </div>
+  </div>
+</div>
+
+<!-- ANALYTICS -->
+<div class="view" id="view-analytics">
+  <div style="height:12px"></div>
+  <div class="tabbar" id="atabs">
+    <div class="tb on" id="tab-overview" onclick="doTab('overview',this)">Overview</div>
+    <div class="tb" id="tab-banis" onclick="doTab('banis',this)">Banis</div>
+    <div class="tb" id="tab-time" onclick="doTab('time',this)">Time</div>
+    <div class="tb" id="tab-lifetime" onclick="doTab('lifetime',this)">Lifetime</div>
+  </div>
+  <div id="acontent"></div>
+</div>
+
+<!-- CALENDAR -->
+<div class="view" id="view-calendar">
+  <div style="height:12px"></div>
+  <div class="shdr"><div class="stit2">📅 Calendar</div><div style="display:flex;gap:10px"><div class="sact" onclick="calNav(-1)">‹ Prev</div><div class="sact" onclick="calNav(1)">Next ›</div></div></div>
+  <div id="calmth" style="text-align:center;font-size:15px;font-weight:800;padding:0 16px 10px"></div>
+  <div class="cgrid" id="caldns"></div>
+  <div class="cgrid" style="margin-top:3px" id="calgrid"></div>
+  <div class="cl">
+    <div class="cli"><div class="cld" style="background:rgba(91,201,138,.35)"></div>Perfect</div>
+    <div class="cli"><div class="cld" style="background:rgba(91,164,232,.35)"></div>Strong</div>
+    <div class="cli"><div class="cld" style="background:rgba(232,164,72,.28)"></div>Partial</div>
+    <div class="cli"><div class="cld" style="background:rgba(224,85,85,.22)"></div>Missed</div>
+  </div>
+  <div class="shdr"><div class="stit2">📊 365-Day Heatmap</div></div>
+  <div class="hmw"><div class="hm" id="hmap"></div></div>
+  <div style="display:flex;align-items:center;gap:5px;padding:6px 16px;font-size:8px;color:var(--t3)">
+    <span>Less</span>
+    <div style="width:10px;height:10px;border-radius:2px;background:var(--s3)"></div>
+    <div style="width:10px;height:10px;border-radius:2px;background:rgba(201,168,75,.2)"></div>
+    <div style="width:10px;height:10px;border-radius:2px;background:rgba(201,168,75,.55)"></div>
+    <div style="width:10px;height:10px;border-radius:2px;background:var(--g)"></div>
+    <div style="width:10px;height:10px;border-radius:2px;background:var(--gn)"></div>
+    <span>Perfect Day</span>
+  </div>
+</div>
+
+<!-- JOURNAL -->
+<div class="view" id="view-journal">
+  <div style="height:12px"></div>
+  <div class="shdr"><div class="stit2">📝 Reflections</div><div class="sact" onclick="openSh('jSh')">+ New</div></div>
+  <div style="padding:0 16px 8px"><input type="text" id="jsearch" placeholder="🔍  Search reflections..." oninput="renderJ()" style="background:var(--s2);border:1px solid var(--b2);border-radius:10px;color:var(--tx);font-family:inherit;font-size:13px;padding:9px 12px;width:100%;outline:none"></div>
+  <div class="chip-bar" style="margin-bottom:12px" id="jfilt">
+    <div class="chip on" onclick="filtJ('all',this)">All</div>
+    <div class="chip" onclick="filtJ('amritvela',this)">Amrit Vela</div>
+    <div class="chip" onclick="filtJ('realization',this)">Realization</div>
+    <div class="chip" onclick="filtJ('gratitude',this)">Gratitude</div>
+    <div class="chip" onclick="filtJ('struggle',this)">Struggle</div>
+    <div class="chip" onclick="filtJ('ardaas',this)">Ardaas</div>
+  </div>
+  <div id="jlist"></div>
+  <div class="shdr"><div class="stit2">💭 Today's Prompts</div></div>
+  <div class="seccard">
+    <div style="font-size:11px;color:var(--t3);line-height:2">
+      ✦ How was your focus during Amrit Vela?<br>✦ What went particularly well today?<br>✦ What should improve tomorrow?<br>✦ Any realizations from the Baani?<br>✦ How many minutes was the mind truly still?
+    </div>
+    <button class="btnp" style="font-size:13px;margin-top:12px" onclick="openSh('jSh')">Write Today's Reflection</button>
+  </div>
+</div>
+
+</div>
+
+<div class="bnav">
+  <button class="nb active" id="nav-home" onclick="goView('home')"><div class="ni">🕌</div><div class="nl">Home</div></button>
+  <button class="nb" id="nav-simran" onclick="goView('simran')"><div class="ni">📿</div><div class="nl">Simran</div></button>
+  <button class="nb" id="nav-practice" onclick="goView('practice')"><div class="ni">🎵</div><div class="nl">Practice</div></button>
+  <button class="nb" id="nav-analytics" onclick="goView('analytics')"><div class="ni">📊</div><div class="nl">Insights</div></button>
+  <button class="nb" id="nav-calendar" onclick="goView('calendar')"><div class="ni">📅</div><div class="nl">Calendar</div></button>
+  <button class="nb" id="nav-journal" onclick="goView('journal')"><div class="ni">📝</div><div class="nl">Journal</div></button>
+</div>
+</div>
+
+<!-- SHEETS -->
+<div class="overlay" id="settingsSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">⚙️ Settings</div>
+  <div class="hg">Active Categories</div>
+  <div style="font-size:9px;color:var(--t3);margin:-2px 0 10px;line-height:1.5">Turn a category off when life doesn't allow it right now (e.g. school starts, only evening Sehaj is possible). It disappears from your daily view and today's score — your past history and lifetime totals are untouched. Turn it back on anytime.</div>
+  <div class="trow2"><div class="ti"><div class="tn">Five Daily Banis</div><div class="td">Sukhmani, Asa Di Vaar, Baavan Akhri, Sidh Gosht, Onkar</div></div><div class="tgl on" id="en-b" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Nitnem</div><div class="td">Five daily Banis (morning prayers)</div></div><div class="tgl on" id="en-n" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Morning Sehaj Paath</div><div class="td">AM reading session</div></div><div class="tgl on" id="en-sm" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Afternoon/Evening Sehaj Paath</div><div class="td">PM reading session</div></div><div class="tgl on" id="en-sa" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Chritropakhyan</div><div class="td">Daily angs reading</div></div><div class="tgl on" id="en-ch" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Simran</div><div class="td">Naam Simran tracking</div></div><div class="tgl on" id="en-si" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Gym</div><div class="td">Training sessions</div></div><div class="tgl on" id="en-gy" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Vaja (Harmonium)</div><div class="td">Kirtan practice</div></div><div class="tgl on" id="en-va" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Tabla</div><div class="td">Tabla practice</div></div><div class="tgl on" id="en-ta" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2" style="border:none"><div class="ti"><div class="tn">Panj Vikar Tracking</div><div class="td">Track lapses into the 5 vices</div></div><div class="tgl on" id="en-vk" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+
+  <div class="hg">Dashboard Sections</div>
+  <div style="font-size:9px;color:var(--t3);margin:-2px 0 10px;line-height:1.5">Hide any home-page section you don't want cluttering your day.</div>
+  <div class="trow2"><div class="ti"><div class="tn">Discipline Score Card</div><div class="td">Top score ring + weighted/discipline numbers</div></div><div class="tgl on" id="en-score" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Additional Banis</div><div class="td">Custom bani list on Home</div></div><div class="tgl on" id="en-cb" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Distractions</div><div class="td">Screen-time logging card</div></div><div class="tgl on" id="en-dist" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2" style="border:none"><div class="ti"><div class="tn">Daily Timeline</div><div class="td">Activity feed at bottom of Home</div></div><div class="tgl on" id="en-tl" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+
+  <div class="hg">Navigation Tabs</div>
+  <div style="font-size:9px;color:var(--t3);margin:-2px 0 10px;line-height:1.5">Home is always available. Hide any other tab you don't use — it disappears from the bottom bar entirely.</div>
+  <div class="trow2"><div class="ti"><div class="tn">Simran</div></div><div class="tgl on" id="en-nv_si" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Practice</div></div><div class="tgl on" id="en-nv_pr" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Insights (Analytics)</div></div><div class="tgl on" id="en-nv_an" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Calendar</div></div><div class="tgl on" id="en-nv_ca" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2" style="border:none"><div class="ti"><div class="tn">Journal</div></div><div class="tgl on" id="en-nv_jo" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+
+  <div class="hg">Analytics Tabs</div>
+  <div class="trow2"><div class="ti"><div class="tn">Overview</div></div><div class="tgl on" id="en-at_ov" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Banis</div></div><div class="tgl on" id="en-at_ba" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Time</div></div><div class="tgl on" id="en-at_ti" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2" style="border:none"><div class="ti"><div class="tn">Lifetime</div></div><div class="tgl on" id="en-at_li" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="hg">Daily Goals</div>
+  <div class="ff"><label class="fl">Simran Goal (hours)</label><input type="number" id="s-sg" min=".5" max="24" step=".5" value="3"></div>
+  <div class="ff"><label class="fl">Chritropakhyan Target (angs/day)</label><input type="number" id="s-ct" min="1" max="100" value="5"></div>
+  <div class="ff"><label class="fl">Vaja Target (minutes)</label><input type="number" id="s-vt" min="5" max="300" step="5" value="45"></div>
+  <div class="ff"><label class="fl">Tabla Target (minutes)</label><input type="number" id="s-tt" min="5" max="300" step="5" value="30"></div>
+  <div class="hg">Amrit Vela Hours</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div class="ff"><label class="fl">Start</label><input type="time" id="s-as" value="03:00"></div>
+    <div class="ff"><label class="fl">End</label><input type="time" id="s-ae" value="06:00"></div>
+  </div>
+  <div class="hg">Scoring Weights</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div class="ff"><label class="fl">Daily Banis (pts)</label><input type="number" id="w-b" value="40" min="0" max="100"></div>
+    <div class="ff"><label class="fl">Morning Sehaj</label><input type="number" id="w-sm" value="15" min="0" max="50"></div>
+    <div class="ff"><label class="fl">Afternoon Sehaj</label><input type="number" id="w-sa" value="15" min="0" max="50"></div>
+    <div class="ff"><label class="fl">Chritropakhyan</label><input type="number" id="w-ch" value="10" min="0" max="50"></div>
+    <div class="ff"><label class="fl">Simran</label><input type="number" id="w-si" value="10" min="0" max="50"></div>
+    <div class="ff"><label class="fl">Gym</label><input type="number" id="w-gy" value="3" min="0" max="20"></div>
+    <div class="ff"><label class="fl">Vaja</label><input type="number" id="w-va" value="4" min="0" max="20"></div>
+    <div class="ff"><label class="fl">Tabla</label><input type="number" id="w-ta" value="3" min="0" max="20"></div>
+  </div>
+  <div style="font-size:9px;color:var(--t3);margin:-4px 0 4px">Only categories switched on above count toward today's score — weights are automatically rebalanced to still total 100.</div>
+  <div class="hg">Distraction Penalties (customizable)</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div class="ff"><label class="fl">0–30 min (pts)</label><input type="number" id="p-a" value="0" min="0" max="50"></div>
+    <div class="ff"><label class="fl">30–60 min (pts)</label><input type="number" id="p-b" value="2" min="0" max="50"></div>
+    <div class="ff"><label class="fl">1–2 hours (pts)</label><input type="number" id="p-c" value="5" min="0" max="50"></div>
+    <div class="ff"><label class="fl">2–3 hours (pts)</label><input type="number" id="p-d" value="10" min="0" max="50"></div>
+    <div class="ff"><label class="fl">3–4 hours (pts)</label><input type="number" id="p-e" value="15" min="0" max="50"></div>
+    <div class="ff"><label class="fl">4+ hours (pts)</label><input type="number" id="p-f" value="25" min="0" max="50"></div>
+  </div>
+  <div class="hg">Panj Vikar (5 Vices) Penalty</div>
+  <div style="font-size:9px;color:var(--t3);margin:-2px 0 8px">Points deducted from your Discipline Score each time you log a lapse — set your own weight per vice.</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+    <div class="ff"><label class="fl">Kaam (Lust)</label><input type="number" id="vk-kaam" min="1" max="50" value="5"></div>
+    <div class="ff"><label class="fl">Krodh (Anger)</label><input type="number" id="vk-krodh" min="1" max="50" value="4"></div>
+    <div class="ff"><label class="fl">Lobh (Greed)</label><input type="number" id="vk-lobh" min="1" max="50" value="4"></div>
+    <div class="ff"><label class="fl">Moh (Attachment)</label><input type="number" id="vk-moh" min="1" max="50" value="3"></div>
+    <div class="ff"><label class="fl">Hankar (Ego)</label><input type="number" id="vk-hankar" min="1" max="50" value="4"></div>
+  </div>
+  <div class="hg">Reminders</div>
+  <div style="font-size:9px;color:var(--t3);margin:-2px 0 10px;line-height:1.5">These work while the app is open in your browser — there's no background server, so nothing fires if the tab/app is fully closed.</div>
+  <div class="trow2"><div class="ti"><div class="tn">Amrit Vela Alarm</div><div class="td">In-app alert at your configured start time</div></div><div class="tgl on" id="en-rm_av" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2"><div class="ti"><div class="tn">Streak Protection</div><div class="td">Alert at 9 PM if today isn't on track yet</div></div><div class="tgl on" id="en-rm_sp" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="trow2" style="border:none"><div class="ti"><div class="tn">Haptic Feedback</div><div class="td">Vibration on Simran taps</div></div><div class="tgl on" id="en-rm_hp" onclick="this.classList.toggle('on')"><div class="tth"></div></div></div>
+  <div class="hg">Danger Zone</div>
+  <button class="btnp" onclick="saveSettings()">Save Settings</button>
+  <button class="btns" onclick="exportJSON()">Export Data (JSON)</button>
+  <button class="btns" onclick="exportCSV()">Export Data (CSV)</button>
+  <button class="btns" onclick="importData()">Restore from Backup (JSON)</button>
+  <input type="file" id="importFile" accept=".json" style="display:none" onchange="handleImport(event)">
+  <button class="btns" style="color:var(--am);border-color:rgba(232,164,74,.3)" onclick="resetAllProgress()">Reset All Progress</button>
+  <div style="font-size:9px;color:var(--t3);margin:-6px 0 10px">Wipes tracked history & stats only — keeps your settings, weights, goals, and custom Additional Banis.</div>
+  <button class="btns" style="color:var(--re);border-color:rgba(224,85,85,.3)" onclick="resetAllData()">Reset All Data</button>
+  <div style="font-size:9px;color:var(--t3);margin:6px 0 0">Wipes absolutely everything, including settings — a true factory reset.</div>
+  <button class="btns" onclick="closeSh('settingsSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="confirmSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div>
+  <div class="stit" id="confirmTit">⚠️ Are you sure?</div>
+  <div style="font-size:12px;color:var(--t2);line-height:1.7;white-space:pre-line;margin:2px 0 18px" id="confirmMsg"></div>
+  <button class="btnp" id="confirmBtn" style="background:var(--re);color:#fff" onclick="runPendingConfirm()">Confirm</button>
+  <button class="btns" onclick="closeSh('confirmSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="profileSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div>
+  <div class="pav">🌸</div><div class="pname">Subeg Singh</div><div class="ptitle">✦ Dedicated Practitioner ✦</div>
+  <div style="text-align:center;font-size:10px;color:var(--t3);margin-top:6px"><span id="profdays">0</span> days tracked · Avg: <span id="profavg">0</span>/100</div>
+  <div style="height:14px"></div>
+  <div id="profgrid"></div>
+  <div class="hg">Achievements</div>
+  <div id="profach"></div>
+  <button class="btns" style="margin-top:12px" onclick="closeSh('profileSh')">Close</button>
+</div></div>
+
+<div class="overlay" id="nitnemSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">🙏 Nitnem</div>
+  <div id="nshlist"></div>
+  <div class="hg">Completion (Last 30 Days)</div>
+  <div id="nshstr"></div>
+  <button class="btns" style="margin-top:12px" onclick="closeSh('nitnemSh')">Close</button>
+</div></div>
+
+<div class="overlay" id="chSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">📝 Chritropakhyan Goal</div>
+  <div class="ff"><label class="fl">Daily Target (angs)</label><input type="number" id="chtinp" min="1" max="100" value="5"></div>
+  <button class="btnp" onclick="saveChtgt()">Save Goal</button>
+  <button class="btns" onclick="closeSh('chSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="distSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">🚫 Log Distraction</div>
+  <div class="ff"><label class="fl">Platform</label>
+    <div class="pill-row" id="dpills">
+      <div class="pill on" data-v="YouTube" onclick="selP(this,'dpills')">📺 YouTube</div>
+      <div class="pill" data-v="YT Shorts" onclick="selP(this,'dpills')">📱 Shorts</div>
+      <div class="pill" data-v="Instagram" onclick="selP(this,'dpills')">📸 Instagram</div>
+      <div class="pill" data-v="Reels" onclick="selP(this,'dpills')">🎞 Reels</div>
+      <div class="pill" data-v="TikTok" onclick="selP(this,'dpills')">🎵 TikTok</div>
+      <div class="pill" data-v="Gaming" onclick="selP(this,'dpills')">🎮 Gaming</div>
+      <div class="pill" data-v="Browsing" onclick="selP(this,'dpills')">🌐 Browsing</div>
+      <div class="pill" data-v="Other" onclick="selP(this,'dpills')">Other</div>
+    </div>
+  </div>
+  <div class="ff"><label class="fl">Duration</label>
+    <div style="display:flex;align-items:center;gap:8px">
+      <input type="number" id="dh" value="0" min="0" max="12" style="width:70px"> <span style="color:var(--t3)">h</span>
+      <input type="number" id="dm" value="30" min="0" max="59" style="width:70px"> <span style="color:var(--t3)">m</span>
+    </div>
+  </div>
+  <div class="ff"><label class="fl">Note (optional)</label><textarea id="dnote" placeholder="What triggered it?"></textarea></div>
+  <button class="btnp" onclick="saveDist()">Log Distraction</button>
+  <button class="btns" onclick="closeSh('distSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="jSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">📝 New Reflection</div>
+  <div class="ff"><label class="fl">Category</label>
+    <div class="pill-row" id="jtpills">
+      <div class="pill on" data-v="amritvela" onclick="selP(this,'jtpills')">Amrit Vela</div>
+      <div class="pill" data-v="realization" onclick="selP(this,'jtpills')">Realization</div>
+      <div class="pill" data-v="gratitude" onclick="selP(this,'jtpills')">Gratitude</div>
+      <div class="pill" data-v="struggle" onclick="selP(this,'jtpills')">Struggle</div>
+      <div class="pill" data-v="ardaas" onclick="selP(this,'jtpills')">Ardaas</div>
+    </div>
+  </div>
+  <div class="ff"><label class="fl">Mood</label>
+    <div style="display:flex;gap:14px;font-size:26px" id="moodrow">
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'🙏')">🙏</span>
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'😌')">😌</span>
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'✨')">✨</span>
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'😔')">😔</span>
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'🔥')">🔥</span>
+      <span style="cursor:pointer;opacity:.4" onclick="selMood(this,'🌧️')">🌧️</span>
+    </div>
+  </div>
+  <div class="ff"><label class="fl">Reflection</label><textarea id="jtext" placeholder="Write your thoughts, realizations, prayers..." style="min-height:130px"></textarea></div>
+  <button class="btnp" onclick="saveJ()">Save Reflection</button>
+  <button class="btns" onclick="closeSh('jSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="addBaniSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit" id="addBaniTit">✨ Add Custom Bani</div>
+  <input type="hidden" id="cbid" value="">
+  <div class="ff"><label class="fl">Bani Name</label><input type="text" id="cbn" placeholder="e.g. Salok Mahalla 9, Dakhni Oankar..."></div>
+  <div class="ff"><label class="fl">Notes (optional)</label><input type="text" id="cbno" placeholder="e.g. Evening recitation"></div>
+  <div class="ff"><label class="fl">Points (added to your score when completed)</label>
+    <div style="display:flex;gap:6px" id="cbpts-row">
+      <div class="qb cbpt" data-v="1" onclick="selCBPts(this)">1</div>
+      <div class="qb cbpt" data-v="2" onclick="selCBPts(this)">2</div>
+      <div class="qb cbpt p" data-v="3" onclick="selCBPts(this)">3</div>
+      <div class="qb cbpt" data-v="4" onclick="selCBPts(this)">4</div>
+      <div class="qb cbpt" data-v="5" onclick="selCBPts(this)">5</div>
+    </div>
+  </div>
+  <button class="btnp" id="addBaniBtn" onclick="addCB()">Add Bani</button>
+  <button class="btns" onclick="closeSh('addBaniSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="vajaSet" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">🎹 Vaja Settings</div>
+  <div class="ff"><label class="fl">Daily Target (minutes)</label><input type="number" id="vjti" min="5" max="300" step="5" value="45"></div>
+  <div class="ff"><label class="fl">Focus Areas / Notes</label><textarea id="vjni" placeholder="Scales, Shabads to practice, Ragas..."></textarea></div>
+  <button class="btnp" onclick="savePSet('vaja')">Save</button>
+  <button class="btns" onclick="closeSh('vajaSet')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="tablaSet" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit">🥁 Tabla Settings</div>
+  <div class="ff"><label class="fl">Daily Target (minutes)</label><input type="number" id="tbti" min="5" max="300" step="5" value="30"></div>
+  <div class="ff"><label class="fl">Focus Areas / Notes</label><textarea id="tbni" placeholder="Taals, compositions, exercises..."></textarea></div>
+  <button class="btnp" onclick="savePSet('tabla')">Save</button>
+  <button class="btns" onclick="closeSh('tablaSet')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="manualSh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit" id="manualtit">Log Time</div>
+  <div class="ff"><label class="fl">Hours</label><input type="number" id="mh" value="0" min="0" max="12"></div>
+  <div class="ff"><label class="fl">Minutes</label><input type="number" id="mm" value="30" min="0" max="59"></div>
+  <button class="btnp" onclick="saveManual()">Save</button>
+  <button class="btns" onclick="closeSh('manualSh')">Cancel</button>
+</div></div>
+
+<div class="overlay" id="daySh" onclick="closeO(this)"><div class="sheet">
+  <div class="shdl"></div><div class="stit" id="daytit">Day Details</div>
+  <div id="daycont"></div>
+  <button class="btns" style="margin-top:12px" onclick="closeSh('daySh')">Close</button>
+</div></div>
+
+<div class="toast" id="toast"></div>
+<script>
+const SK='avos_v4';
+const BC=[
+  {id:'sukhmani',name:'Sukhmani Sahib',gur:'ਸੁਖਮਨੀ ਸਾਹਿਬ',dur:'~60 min'},
+  {id:'asadivaar',name:'Asa Di Vaar',gur:'ਆਸਾ ਦੀ ਵਾਰ',dur:'~30 min'},
+  {id:'baavanakhri',name:'Baavan Akhri',gur:'ਬਾਵਨ ਅਖਰੀ',dur:'~20 min'},
+  {id:'sidhgosht',name:'Sidh Gosht',gur:'ਸਿਧ ਗੋਸਟਿ',dur:'~25 min'},
+  {id:'onkar',name:'Onkar',gur:'ਓਅੰਕਾਰੁ',dur:'~20 min'},
+];
+const NC=[
+  {id:'japji',name:'Japji Sahib',gur:'ਜਪੁਜੀ ਸਾਹਿਬ'},
+  {id:'jaap',name:'Jaap Sahib',gur:'ਜਾਪੁ ਸਾਹਿਬ'},
+  {id:'tavprasad',name:'Tav-Prasad Savaiye',gur:'ਤਵ ਪ੍ਰਸਾਦਿ ਸਵਯੇ'},
+  {id:'chaupai',name:'Chaupai Sahib',gur:'ਬੇਨਤੀ ਚੌਪਈ'},
+  {id:'anand',name:'Anand Sahib',gur:'ਆਨੰਦੁ ਸਾਹਿਬ'},
+];
+const DI={YouTube:'📺','YT Shorts':'📱',Instagram:'📸',Reels:'🎞',TikTok:'🎵',Gaming:'🎮',Browsing:'🌐',Other:'💭'};
+const MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const TC={amritvela:'var(--p)',realization:'var(--t)',gratitude:'var(--gn)',struggle:'var(--ro)',ardaas:'var(--g)'};
+const DW={b:40,sm:15,sa:15,ch:10,si:10,gy:3,va:4,ta:3};
+const DEN={
+  b:true,n:true,sm:true,sa:true,ch:true,si:true,gy:true,va:true,ta:true,vk:true,
+  score:true,cb:true,dist:true,tl:true,
+  nv_si:true,nv_pr:true,nv_an:true,nv_ca:true,nv_jo:true,
+  at_ov:true,at_ba:true,at_ti:true,at_li:true,
+  rm_av:true,rm_sp:true,rm_hp:true
+};
+const DVK={kaam:5,krodh:4,lobh:4,moh:3,hankar:4};
+
+// STATE
+let S={
+  set:{sg:3,ct:5,vt:45,tt:30,as:'03:00',ae:'06:00',w:{...DW},en:{...DEN},vikpen:{...DVK},vf:'',tf:''},
+  days:{},cb:[],journals:[]
+};
+let TODAY=mk();
+
+function mk(d){
+  d=d||new Date();
+  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+}
+function mkDay(){
+  const b={},n={};
+  BC.forEach(x=>b[x.id]={done:false,ts:null});
+  NC.forEach(x=>n[x.id]={done:false,ts:null});
+  return{banis:b,nitnem:n,sehaj:{m:0,a:0,ts:[]},ch:{c:0,ts:[]},sim:{m:0,sess:[]},gym:{done:false,ts:null},vaja:{m:0,sess:[]},tabla:{m:0,sess:[]},vikar:{kaam:0,krodh:0,lobh:0,moh:0,hankar:0,ts:[]},cd:{},dist:[],tl:[],ws:0,ds:0,ip:false,pen:0,vpen:0};
+}
+function normVikpen(v){return (v&&typeof v==='object')?{...DVK,...v}:{...DVK};}
+function load(){
+  try{const r=localStorage.getItem(SK);if(r){const p=JSON.parse(r);S={set:{...S.set,...p.set,w:{...DW,...(p.set?.w||{})},en:{...DEN,...(p.set?.en||{})},vikpen:normVikpen(p.set?.vikpen)},days:p.days||{},cb:p.cb||[],journals:p.journals||[]};}}catch(e){}
+  if(!S.days[TODAY])S.days[TODAY]=mkDay();
+}
+function sv(){try{localStorage.setItem(SK,JSON.stringify(S));}catch(e){}}
+function gd(k){
+  k=k||TODAY;if(!S.days[k])S.days[k]=mkDay();
+  const d=S.days[k];
+  if(!d.vikar)d.vikar={kaam:0,krodh:0,lobh:0,moh:0,hankar:0,ts:[]}; // backfill for days created before this feature existed
+  return d;
+}
+
+// SCORE
+function vikarCount(d){const v=d.vikar;return v?(v.kaam||0)+(v.krodh||0)+(v.lobh||0)+(v.moh||0)+(v.hankar||0):0;}
+function vikarPenalty(d){
+  const v=d.vikar;if(!v)return 0;const p=S.set.vikpen||DVK;
+  return VK.reduce((a,it)=>a+(v[it.k]||0)*(p[it.k]!=null?p[it.k]:DVK[it.k]),0);
+}
+function calcS(k){
+  k=k||TODAY;const d=gd(k);const w=S.set.w;const en=S.set.en||DEN;
+  const bd=Object.values(d.banis).filter(x=>x.done).length;
+  const parts=[
+    {on:en.b, earn:(bd/5)*w.b,                                    wt:w.b, ok:bd===5},
+    {on:en.sm,earn:Math.min(1,d.sehaj.m/20)*w.sm,                 wt:w.sm,ok:d.sehaj.m>=20},
+    {on:en.sa,earn:Math.min(1,d.sehaj.a/20)*w.sa,                 wt:w.sa,ok:d.sehaj.a>=20},
+    {on:en.ch,earn:Math.min(1,d.ch.c/(S.set.ct||5))*w.ch,         wt:w.ch,ok:d.ch.c>=(S.set.ct||5)},
+    {on:en.si,earn:Math.min(1,d.sim.m/((S.set.sg||3)*60))*w.si,   wt:w.si,ok:d.sim.m>=(S.set.sg||3)*60},
+    {on:en.gy,earn:(d.gym.done?w.gy:0),                           wt:w.gy,ok:d.gym.done},
+    {on:en.va,earn:Math.min(1,d.vaja.m/(S.set.vt||45))*w.va,      wt:w.va,ok:d.vaja.m>=(S.set.vt||45)},
+    {on:en.ta,earn:Math.min(1,d.tabla.m/(S.set.tt||30))*w.ta,     wt:w.ta,ok:d.tabla.m>=(S.set.tt||30)},
+  ];
+  const active=parts.filter(p=>p.on);
+  const totalW=active.reduce((a,p)=>a+p.wt,0)||1;
+  const earned=active.reduce((a,p)=>a+p.earn,0);
+  const ws=Math.round(earned/totalW*100);
+  const cbBonus=en.cb===false?0:S.cb.reduce((a,b)=>a+(d.cd[b.id]?(b.pts!=null?b.pts:3):0),0);
+  const dm=(d.dist||[]).reduce((a,x)=>a+x.m,0);
+  const pv=S.set.pen||{a:0,b:2,c:5,d:10,e:15,f:25};
+  let pen=pv.a||0;
+  if(dm>=30&&dm<60)pen=pv.b||2;else if(dm>=60&&dm<120)pen=pv.c||5;else if(dm>=120&&dm<180)pen=pv.d||10;else if(dm>=180&&dm<240)pen=pv.e||15;else if(dm>=240)pen=pv.f||25;
+  const vpen=en.vk?vikarPenalty(d):0;
+  const ds=ws+cbBonus-pen-vpen; // intentionally unclamped — bonus banis can push above 100, penalties can push below 0
+  const ip=active.every(p=>p.ok)&&(!en.vk||vikarCount(d)===0);
+  d.ws=ws;d.ds=ds;d.ip=ip;d.pen=pen;d.vpen=vpen;d.cbBonus=cbBonus;
+  return{ws,ds,pen,vpen,cbBonus,ip,bd,dm};
+}
+
+function tlLog(ico,txt){
+  const d=gd();const t=new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+  d.tl.unshift({ico,txt,t,ts:Date.now()});
+}
+
+// HOME
+function renderHome(){
+  const d=gd();const{ws,ds,pen,vpen,cbBonus,ip,bd}=calcS();const now=new Date();
+  applyCatVis();
+  $('hdate').textContent=now.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).toUpperCase();
+  const scoreColor=s=>s>=90?'var(--gn)':s>=75?'var(--g)':s>=55?'var(--am)':'var(--re)';
+  $('wsd').innerHTML=`<span style="color:${scoreColor(ws)}">${ws}</span><span class="sden">/100</span>`;
+  $('dsd').innerHTML=`<span style="color:${scoreColor(ds)}">${ds}</span><span class="sden">/100</span>`;
+  $('wssub').textContent=`${bd}/5 Banis · ${ws}pts weighted`;
+  const totalPen=pen+vpen;
+  let peTxt;
+  if(cbBonus>0&&totalPen>0)peTxt=`+${cbBonus} bonus, −${totalPen} penalty`;
+  else if(cbBonus>0)peTxt=`+${cbBonus} bonus pts ✓`;
+  else if(totalPen>0)peTxt=`−${totalPen} pts penalty`;
+  else peTxt='No penalty ✓';
+  const pe=$('dspen');pe.textContent=peTxt;pe.className='ssub'+(totalPen>0?' warn':' ok');
+  const c=2*Math.PI*21;
+  $('pr').setAttribute('stroke-dasharray',`${c*ws/100} ${c*(1-ws/100)}`);
+  $('rpct').textContent=ws+'%';
+  $('hstr').textContent=curStreak()+'d';$('hstr2').textContent=curStreak()+'d';
+  $('hperf').textContent=lifetimePerfectDays();$('hbest').textContent=bestOverallStreak()+'d';
+
+  const pb=$('pbanner'),nd=$('needs');
+  if(ip){pb.classList.add('show');nd.classList.remove('show');}
+  else{pb.classList.remove('show');const needs=getNeeds(d);if(needs.length){nd.classList.add('show');$('nlist').innerHTML=needs.map(n=>`<div class="nc">${n}</div>`).join('');}else nd.classList.remove('show');}
+
+  // Banis
+  $('bpct').textContent=`${bd}/5`;
+  $('bfill').style.width=(bd/5*100)+'%';
+  $('blist').innerHTML=BC.map(b=>{
+    const e=d.banis[b.id];const done=e&&e.done;
+    const t=done&&e.ts?new Date(e.ts).toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'}):'';
+    return`<div class="bi" onclick="togB('${b.id}')">
+      <div class="bchk ${done?'on':''}">${done?'✓':''}</div>
+      <div style="flex:1"><div class="bname ${done?'done':''}">${b.gur}</div><div class="bgur">${b.name}${done&&t?' · '+t:' · '+b.dur}</div></div>
+      <div class="bstr">🔥 ${bStr(b.id)}d</div>
+    </div>`;
+  }).join('');
+
+  // Nitnem
+  const nd2=Object.values(d.nitnem).filter(x=>x.done).length;
+  $('npct').textContent=`${nd2}/5`;$('nfill').style.width=(nd2/5*100)+'%';
+  $('nlist2').innerHTML=NC.map(n=>{
+    const e=d.nitnem[n.id];const done=e&&e.done;
+    return`<div class="bi" onclick="togN('${n.id}')">
+      <div class="bchk ${done?'on':''}" style="${done?'border-color:var(--t);background:var(--t);color:var(--d)':'border-color:var(--t)'}">${done?'✓':''}</div>
+      <div style="flex:1"><div class="bname ${done?'done':''}">${n.gur}</div><div class="bgur">${n.name}</div></div>
+    </div>`;
+  }).join('');
+
+  // Sehaj
+  renderSehaj(d);
+
+  // Chritro
+  const ct=S.set.ct||5;
+  $('chd').innerHTML=d.ch.c+`<span style="font-size:13px;color:var(--t3)">/${ct}</span>`;
+  $('chbar').style.width=Math.min(100,d.ch.c/ct*100)+'%';
+  $('chlt').textContent=ltCh();
+  // compute chritro streak
+  let cstr=0;const cn=new Date();for(let i=0;i<365;i++){const cd=new Date(cn);cd.setDate(cd.getDate()-i);const cdd=S.days[mk(cd)];const ct=S.set.ct||5;if(cdd&&cdd.ch&&cdd.ch.c>=ct)cstr++;else if(i>0)break;}
+  $('chstr').textContent=cstr;
+
+  // Simran
+  const sm=d.sim.m,sg=(S.set.sg||3)*60;
+  const sh=Math.floor(sm/60),sm2=sm%60;
+  $('sqm').textContent=`${sh}h ${sm2}m today · Goal: ${S.set.sg||3}h`;
+  const sdone=sm>=sg;
+  $('sqck').textContent=sdone?'✓':'○';$('sqck').className='ck'+(sdone?' on':'');
+  $('sqpl').textContent=sdone?'Goal met ✓':fmtM(sm);
+  $('sqpl').className='tpl'+(simOn?' run':'');
+
+  // Gym
+  $('gymck').textContent=d.gym.done?'✓':'○';$('gymck').className='ck'+(d.gym.done?' on':'');
+  $('gymr').className='pr'+(d.gym.done?' ok':'');
+  const gymBest=bestGymStreak();
+  $('gymm').textContent=d.gym.done?`Completed ✓ · Streak: ${gymStreak()}d · Best: ${gymBest}d`:`Tap to log · Best streak: ${gymBest}d`;
+  $('gymstr').textContent=gymStreak();
+
+  // Vaja
+  const vt=S.set.vt||45,vok=d.vaja.m>=vt;
+  $('vajack').textContent=vok?'✓':'○';$('vajack').className='ck'+(vok?' on':'');
+  $('vajar').className='pr'+(vok?' ok':'');
+  $('vajam').textContent=`${d.vaja.m} / ${vt} min`;$('vajapl').textContent=fmtM(d.vaja.m);
+
+  // Tabla
+  const tt=S.set.tt||30,tok=d.tabla.m>=tt;
+  $('tablack').textContent=tok?'✓':'○';$('tablack').className='ck'+(tok?' on':'');
+  $('tablar').className='pr'+(tok?' ok':'');
+  $('tablam').textContent=`${d.tabla.m} / ${tt} min`;$('tablapl').textContent=fmtM(d.tabla.m);
+
+  renderCB();renderDist();renderVikar();renderTL();renderDStrip();
+}
+
+function getNeeds(d){
+  const s=S.set;const en=s.en||DEN;const n=[];
+  const bd=Object.values(d.banis).filter(x=>x.done).length;
+  if(en.b&&bd<5)n.push(`${5-bd} Bani${5-bd>1?'s':''}`);
+  if(en.sm&&d.sehaj.m<20)n.push(`Morning Sehaj (${20-d.sehaj.m} more)`);
+  if(en.sa&&d.sehaj.a<20)n.push(`Afternoon Sehaj (${20-d.sehaj.a} more)`);
+  if(en.ch&&d.ch.c<(s.ct||5))n.push(`Chritro (${(s.ct||5)-d.ch.c} more)`);
+  if(en.si&&d.sim.m<(s.sg||3)*60)n.push('Simran goal');
+  if(en.gy&&!d.gym.done)n.push('Gym');
+  if(en.va&&d.vaja.m<(s.vt||45))n.push('Vaja');
+  if(en.ta&&d.tabla.m<(s.tt||30))n.push('Tabla');
+  return n;
+}
+
+function renderSehaj(d){
+  const en=S.set.en||DEN;
+  const tot=(d.sehaj.m||0)+(d.sehaj.a||0);
+  $('stotal').textContent=`${tot} angs today`;
+  $('sgrid').innerHTML=[{k:'m',lbl:'Morning',on:en.sm},{k:'a',lbl:'Afternoon',on:en.sa}].filter(s=>s.on).map(s=>{
+    const c=d.sehaj[s.k]||0;const p=Math.min(100,c/20*100);const ok=c>=20;
+    return`<div class="sblck ${ok?'ok':''}">
+      <div class="slbl">${s.lbl} Sehaj Paath</div>
+      <div class="scnt">${c}<span class="sden2">/20</span></div>
+      <div style="font-size:8px;color:var(--t3);margin-top:2px">Angs</div>
+      <div class="sbar"><div class="sfill ${ok?'ok':''}" style="width:${p}%"></div></div>
+      <div class="sbtns">
+        <div class="qb p" onclick="addSehaj('${s.k}',1)">+1</div>
+        <div class="qb" onclick="addSehaj('${s.k}',5)">+5</div>
+        <div class="qb" onclick="addSehaj('${s.k}',10)">+10</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderCB(){
+  const d=gd();const el=$('cblist');
+  if(!S.cb.length){el.innerHTML='';return;}
+  el.innerHTML=S.cb.map(b=>{
+    const done=d.cd[b.id]||false;
+    return`<div class="cbi">
+      <div class="cck ${done?'on':''}" onclick="togCB('${b.id}')">${done?'✓':''}</div>
+      <div style="flex:1;cursor:pointer" onclick="togCB('${b.id}')"><div class="cbn">${b.name}</div>${b.notes?`<div class="cbnote">${b.notes}</div>`:''}</div>
+      <div class="cbpts" onclick="editCB('${b.id}')" title="Tap to edit points">+${b.pts!=null?b.pts:3}</div>
+      <div style="font-size:14px;color:var(--t3);cursor:pointer;padding:4px" onclick="delCB('${b.id}')">🗑</div>
+    </div>`;
+  }).join('');
+}
+
+function renderDist(){
+  const d=gd();
+  const tot=d.dist.reduce((a,x)=>a+x.m,0);
+  $('dtotal').textContent=tot>0?fmtMF(tot)+' total':'None logged ✓';
+  $('dtotal').style.color=tot>=120?'var(--re)':tot>=60?'var(--am)':'var(--t3)';
+  const g={};d.dist.forEach(x=>{g[x.type]=(g[x.type]||0)+x.m;});
+  const el=$('dtlist');
+  if(!Object.keys(g).length){el.innerHTML='<div style="font-size:11px;color:var(--gn);padding:8px 0;text-align:center">✓ No distractions logged today</div>';return;}
+  el.innerHTML=Object.entries(g).sort((a,b)=>b[1]-a[1]).map(([t,m])=>`
+    <div class="di"><span class="diico">${DI[t]||'💭'}</span><span class="dilbl">${t}</span><span class="div2">${fmtMF(m)}</span></div>`).join('');
+}
+
+function renderTL(){
+  const d=gd();const el=$('tllist');
+  if(!d.tl.length){el.innerHTML='<div style="padding:14px;font-size:11px;color:var(--t3);text-align:center">No events logged yet today</div>';return;}
+  el.innerHTML=d.tl.map(e=>`<div class="tli"><div class="tldot">${e.ico}</div><div class="tlbd"><div class="tlev">${e.txt}</div><div class="tlt">${e.t}</div></div><div class="tldel" onclick="delTL(${e.ts})">✕</div></div>`).join('');
+}
+function delTL(ts){
+  const d=gd();const idx=d.tl.findIndex(e=>e.ts===ts);
+  if(idx>-1){d.tl.splice(idx,1);sv();renderTL();toast('Entry removed');}
+}
+
+function renderDStrip(){
+  const now=new Date();let h='';
+  for(let i=6;i>=0;i--){
+    const d=new Date(now);d.setDate(d.getDate()-i);
+    const k=mk(d);const dd=S.days[k];const it=i===0;
+    const c=it?'today':dd&&dd.ws>=80?'done':dd&&dd.ws>=40?'partial':dd&&dd.ws>0?'missed':'';
+    h+=`<div class="dchip ${c}"><div class="dd">${DN[d.getDay()]}</div><div class="dn">${d.getDate()}</div><div class="dot"></div></div>`;
+  }
+  $('dstrip').innerHTML=h;
+}
+
+// BANI/NITNEM TOGGLES
+function togB(id){
+  const d=gd();const e=d.banis[id];e.done=!e.done;e.ts=e.done?Date.now():null;
+  const c=BC.find(x=>x.id===id);if(e.done)tlLog('📖',c.name+' ✓ — Daily Bani #'+(Object.values(d.banis).filter(x=>x.done).length)+'/5');
+  calcS();sv();renderHome();toast(e.done?'✓ '+c.name:c.name+' unmarked');
+}
+function togN(id){
+  const d=gd();const e=d.nitnem[id];e.done=!e.done;e.ts=e.done?Date.now():null;
+  const c=NC.find(x=>x.id===id);if(e.done)tlLog('🙏',c.name+' completed');
+  calcS();sv();renderHome();
+  if($('nitnemSh').classList.contains('open'))renderNSh();
+  toast(e.done?'✓ '+c.name:c.name+' unmarked');
+}
+
+// SEHAJ
+function addSehaj(k,n){
+  const d=gd();d.sehaj[k]=(d.sehaj[k]||0)+n;
+  d.sehaj.ts.push({k,n,ts:Date.now()});
+  tlLog('📜',`+${n} angs — ${k==='m'?'Morning':'Afternoon'} Sehaj Paath`);
+  calcS();sv();renderHome();toast(`+${n} Angs`);
+}
+
+// CHRITRO
+function addCh(n){
+  const d=gd();if(n<0&&d.ch.c<=0)return;
+  d.ch.c=Math.max(0,d.ch.c+n);
+  if(n>0){d.ch.ts.push({n,ts:Date.now()});tlLog('📝',`+${n} Chritropakhyan (${d.ch.c}/${S.set.ct||5})`);}
+  calcS();sv();renderHome();if(n>0)toast(`+${n} Angs`);
+}
+function saveChtgt(){
+  S.set.ct=parseInt($('chtinp').value)||5;sv();renderHome();closeSh('chSh');toast('Goal updated');
+}
+
+// GYM
+function togGym(){
+  const d=gd();d.gym.done=!d.gym.done;d.gym.ts=d.gym.done?Date.now():null;
+  if(d.gym.done)tlLog('💪','Gym completed');
+  calcS();sv();renderHome();toast(d.gym.done?'💪 Gym logged!':'Gym unmarked');
+}
+
+// PANJ VIKAR (5 vices)
+const VK=[{k:'kaam',l:'Kaam',sub:'Lust'},{k:'krodh',l:'Krodh',sub:'Anger'},{k:'lobh',l:'Lobh',sub:'Greed'},{k:'moh',l:'Moh',sub:'Attachment'},{k:'hankar',l:'Hankar',sub:'Ego'}];
+function renderVikar(){
+  const d=gd();const p=S.set.vikpen||DVK;
+  $('vikarlist').innerHTML=VK.map(it=>{
+    const c=d.vikar[it.k]||0;const rate=p[it.k]!=null?p[it.k]:DVK[it.k];
+    return`<div class="vrow"><div><div class="vname">${it.l}</div><div class="vsub">${it.sub} · −${rate}pt each</div></div><div class="vctr"><div class="vbtn" onclick="addVikar('${it.k}',-1)">−</div><div class="vcnt">${c}</div><div class="vbtn p" onclick="addVikar('${it.k}',1)">+</div></div></div>`;
+  }).join('');
+  $('vikarpensub').textContent=`−${d.vpen||0} pts today`;
+}
+function addVikar(k,n){
+  const d=gd();
+  if(n<0&&(d.vikar[k]||0)<=0)return;
+  d.vikar[k]=Math.max(0,(d.vikar[k]||0)+n);
+  if(n>0){
+    d.vikar.ts.push({k,ts:Date.now()});
+    const it=VK.find(v=>v.k===k);
+    tlLog('⚖️',`Panj Vikar — ${it.l} (${it.sub})`);
+  }
+  calcS();sv();renderHome();
+  if(n>0){const p=S.set.vikpen||DVK;const rate=p[k]!=null?p[k]:DVK[k];toast('Logged · −'+rate+' pts');}
+}
+function lifetimeVikar(k){return Object.values(S.days).reduce((a,d)=>a+((d.vikar&&d.vikar[k])||0),0);}
+
+// CATEGORY VISIBILITY — show/hide home-page sections based on Settings toggles
+function applyCatVis(){
+  const en=S.set.en||DEN;
+  const set=(id,show)=>{const el=$(id);if(el)el.style.display=show?'':'none';};
+  set('sec-banis',en.b);set('sec-nitnem',en.n);set('sec-sehaj',en.sm||en.sa);
+  set('sec-ch',en.ch);set('sec-sim',en.si);set('sec-gym',en.gy);
+  set('sec-music-hdr',en.va||en.ta);set('sec-vaja',en.va);set('sec-tabla',en.ta);
+  set('sec-vikar',en.vk);set('sec-score',en.score);set('sec-cb',en.cb);set('sec-dist',en.dist);set('sec-tl',en.tl);
+}
+function applyNavVis(){
+  const en=S.set.en||DEN;
+  const set=(id,show)=>{const el=$(id);if(el)el.style.display=show?'':'none';};
+  set('nav-simran',en.nv_si);set('nav-practice',en.nv_pr);set('nav-analytics',en.nv_an);set('nav-calendar',en.nv_ca);set('nav-journal',en.nv_jo);
+  set('tab-overview',en.at_ov);set('tab-banis',en.at_ba);set('tab-time',en.at_ti);set('tab-lifetime',en.at_li);
+}
+
+// SIMRAN TIMER
+let simOn=false,simSec=0,simIv=null,simTap=0,simLogged=0;
+function tapSim(){
+  simTap++;$('simcnt').textContent=simTap;
+  const en=S.set.en||DEN;
+  if(en.rm_hp!==false&&navigator.vibrate)navigator.vibrate(10);
+  const ml=Math.floor(simTap/108),bd=simTap%108;
+  $('simmlbl').textContent=`${ml} ${ml===1?'mala':'malas'} · ${bd}/108`;
+  const dots=$('mdots');
+  dots.innerHTML=Array(11).fill(0).map((_,i)=>{const n=(i+1)*9;const lit=n<=bd;return`<div class="md ${lit?'lit':''}"></div>`;}).join('');
+  if(bd===0&&simTap>0){
+    if(en.rm_hp!==false&&navigator.vibrate)navigator.vibrate([20,40,20]);
+    $('simtap').style.background='rgba(91,201,138,.3)';setTimeout(()=>{$('simtap').style.background='';},600);toast('🌸 Mala complete! ('+ml+')');
+  }
+}
+function simToggle(){
+  if(!simOn){
+    simOn=true;$('simtbtn').textContent='Pause';$('simtimer').classList.add('run');
+    tlLog('📿','Simran started');
+    simIv=setInterval(()=>{simSec++;$('simtimer').textContent=fmtS(simSec);const g=(S.set.sg||3)*3600;$('simtpf').style.width=Math.min(100,simSec/g*100)+'%';},1000);
+  }else{
+    simOn=false;clearInterval(simIv);$('simtbtn').textContent='Resume';$('simtimer').classList.remove('run');
+    const totalM=Math.floor(simSec/60);const delta=totalM-simLogged;
+    if(delta>0){addSimM(delta,true);simLogged=totalM;}
+  }
+}
+function simReset(){
+  simOn=false;clearInterval(simIv);simSec=0;simTap=0;simLogged=0;
+  $('simtimer').textContent='0:00:00';$('simtimer').classList.remove('run');$('simtbtn').textContent='Start';
+  $('simcnt').textContent='0';$('simmlbl').textContent='0 malas · 0/108';$('simtpf').style.width='0%';$('mdots').innerHTML='';
+}
+function addSimM(m,ft){
+  const d=gd();d.sim.m=(d.sim.m||0)+m;d.sim.sess.push({m,ts:Date.now()});
+  if(!ft)tlLog('📿',`Simran: ${fmtMF(m)} logged`);
+  calcS();sv();renderSimView();renderHome();
+}
+function renderSimView(){
+  const en=S.set.en||DEN;
+  const ce=$('simran-content'),ee=$('simran-empty');
+  if(ce)ce.style.display=en.si?'':'none';
+  if(ee)ee.style.display=en.si?'none':'';
+  if(!en.si)return;
+  const d=gd();const sg=S.set.sg||3;const m=d.sim.m;
+  $('simtv').textContent=fmtMF(m);$('simgoallbl').textContent=`of ${sg}h goal`;$('sglbl').textContent=sg+'h';
+  const wm=wkM('sim');$('simwv').textContent=fmtMF(wm);
+  $('simmov').textContent=Math.floor(mthM('sim')/60)+'h';
+  $('simltv').textContent=Math.floor(lifetimeMin('sim')/60)+'h';
+  $('simstrv').textContent=simStreak()+'d';
+  $('simavg').textContent=fmtMF(Math.round(wm/7));
+  const wka=$('sim-wkavg');if(wka)wka.textContent=Math.floor(wm/60)+'h '+wm%60+'m';
+  // longest single session
+  let lsess=0;Object.values(S.days).forEach(d=>{(d.sim.sess||[]).forEach(s=>{if(s.m>lsess)lsess=s.m;});});
+  const lsel=$('sim-long-v');if(lsel)lsel.textContent=fmtMF(lsess);
+  const sl=$('simsess');
+  if(!d.sim.sess.length){sl.innerHTML='<div style="padding:14px;font-size:11px;color:var(--t3);text-align:center">No sessions yet today</div>';return;}
+  sl.innerHTML=d.sim.sess.slice().reverse().map(s=>{
+    const t=new Date(s.ts).toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'});
+    return`<div class="tli"><div class="tldot">📿</div><div class="tlbd"><div class="tlev">${fmtMF(s.m)} session</div><div class="tlt">${t}</div></div></div>`;
+  }).join('');
+}
+
+// PRACTICE TIMERS
+const PT={vaja:{on:false,sec:0,iv:null,logged:0},tabla:{on:false,sec:0,iv:null,logged:0}};
+function togPT(w){
+  const p=PT[w];const ico=w==='vaja'?'🎹':'🥁';const nm=w==='vaja'?'Vaja':'Tabla';
+  if(!p.on){
+    p.on=true;$(w+'btn').textContent='Pause';$(w+'t').classList.add('run');
+    tlLog(ico,nm+' practice started');
+    p.iv=setInterval(()=>{
+      p.sec++;$(w+'t').textContent=fmtS2(p.sec);
+      const tgt=((w==='vaja'?S.set.vt:S.set.tt)||45)*60;
+      $(w+'tpf').style.width=Math.min(100,p.sec/tgt*100)+'%';
+    },1000);
+  }else{
+    p.on=false;clearInterval(p.iv);$(w+'btn').textContent='Resume';$(w+'t').classList.remove('run');
+    const totalM=Math.floor(p.sec/60);const delta=totalM-p.logged;
+    if(delta>0){addPM(w,delta,true);p.logged=totalM;}
+  }
+}
+function resetPT(w){
+  const p=PT[w];p.on=false;clearInterval(p.iv);p.sec=0;p.logged=0;
+  $(w+'t').textContent='0:00';$(w+'t').classList.remove('run');$(w+'btn').textContent='Start';$(w+'tpf').style.width='0%';
+}
+function addPM(w,m,ft){
+  const d=gd();d[w].m=(d[w].m||0)+m;d[w].sess=d[w].sess||[];d[w].sess.push({m,ts:Date.now()});
+  if(!ft)tlLog(w==='vaja'?'🎹':'🥁',`${w==='vaja'?'Vaja':'Tabla'}: +${m}m`);
+  calcS();sv();renderPView();renderHome();
+}
+function savePSet(w){
+  const ti=parseInt($(w==='vaja'?'vjti':'tbti').value)||45;
+  const ni=$(w==='vaja'?'vjni':'tbni').value;
+  if(w==='vaja'){S.set.vt=ti;S.set.vf=ni;}else{S.set.tt=ti;S.set.tf=ni;}
+  sv();renderPView();renderHome();closeSh(w==='vaja'?'vajaSet':'tablaSet');toast('✓ Settings saved');
+}
+function renderPView(){
+  const en=S.set.en||DEN;
+  const pv=$('sec-pvaja'),pt=$('sec-ptabla'),pe=$('practice-empty');
+  if(pv)pv.style.display=en.va?'':'none';
+  if(pt)pt.style.display=en.ta?'':'none';
+  if(pe)pe.style.display=(en.va||en.ta)?'none':'';
+  const d=gd();
+  ['vaja','tabla'].forEach(w=>{
+    const tgt=w==='vaja'?S.set.vt||45:S.set.tt||30;
+    $(w+'tlbl').textContent=tgt+' min';$(w+'td').textContent=(d[w].m||0)+'m';
+    $(w+'str').textContent=(w==='vaja'?vajaStreak():tablaStreak())+'d';
+    $(w+'lt').textContent=Math.floor(lifetimeMin(w)/60)+'h';
+    $(w+'wk').textContent=fmtMF(wkM(w));$(w+'mo').textContent=Math.floor(mthM(w)/60)+'h';
+  });
+  $('vjti').value=S.set.vt||45;$('tbti').value=S.set.tt||30;
+  $('vjni').value=S.set.vf||'';$('tbni').value=S.set.tf||'';
+}
+
+// MANUAL TIME
+let manTgt='';
+function openManual(w){manTgt=w;const names={simran:'Simran',vaja:'Vaja',tabla:'Tabla'};$('manualtit').textContent='Log '+names[w]+' Time';openSh('manualSh');}
+function saveManual(){
+  const h=parseInt($('mh').value)||0,m2=parseInt($('mm').value)||0,tot=h*60+m2;
+  if(tot<=0){toast('Enter a valid duration');return;}
+  if(manTgt==='simran')addSimM(tot,false);else addPM(manTgt,tot,false);
+  closeSh('manualSh');toast('✓ '+fmtMF(tot)+' logged');
+}
+
+// CUSTOM BANIS
+function openAddBani(){
+  $('cbid').value='';$('cbn').value='';$('cbno').value='';
+  document.querySelectorAll('#cbpts-row .cbpt').forEach(x=>x.classList.toggle('p',x.dataset.v==='3'));
+  $('addBaniTit').textContent='✨ Add Custom Bani';$('addBaniBtn').textContent='Add Bani';
+  openSh('addBaniSh');
+}
+function editCB(id){
+  const b=S.cb.find(x=>x.id===id);if(!b)return;
+  $('cbid').value=id;$('cbn').value=b.name;$('cbno').value=b.notes||'';
+  const pts=b.pts!=null?b.pts:3;
+  document.querySelectorAll('#cbpts-row .cbpt').forEach(x=>x.classList.toggle('p',parseInt(x.dataset.v)===pts));
+  $('addBaniTit').textContent='✏️ Edit Custom Bani';$('addBaniBtn').textContent='Save Changes';
+  openSh('addBaniSh');
+}
+function selCBPts(el){document.querySelectorAll('#cbpts-row .cbpt').forEach(x=>x.classList.remove('p'));el.classList.add('p');}
+function addCB(){
+  const n=$('cbn').value.trim();if(!n){toast('Enter a name');return;}
+  const notes=$('cbno').value.trim();
+  const ptsEl=document.querySelector('#cbpts-row .cbpt.p');const pts=Math.min(5,Math.max(1,ptsEl?parseInt(ptsEl.dataset.v):3));
+  const editId=$('cbid').value;
+  if(editId){
+    const b=S.cb.find(x=>x.id===editId);
+    if(b){b.name=n;b.notes=notes;b.pts=pts;}
+    toast('✓ '+n+' updated');
+  }else{
+    const id='cb'+Date.now();
+    S.cb.push({id,name:n,notes,pts});
+    toast('✓ '+n+' added');
+  }
+  calcS();sv();renderHome();
+  $('cbn').value='';$('cbno').value='';$('cbid').value='';closeSh('addBaniSh');
+}
+function togCB(id){
+  const d=gd();d.cd[id]=!d.cd[id];
+  const b=S.cb.find(x=>x.id===id);if(d.cd[id]&&b)tlLog('✨',b.name+' completed (+'+(b.pts!=null?b.pts:3)+'pt)');
+  calcS();sv();renderHome();
+}
+function delCB(id){
+  S.cb=S.cb.filter(x=>x.id!==id);
+  const d=gd();delete d.cd[id];
+  calcS();sv();renderHome();
+}
+
+// DISTRACTIONS
+function saveDist(){
+  const type=getP('dpills');const h=parseInt($('dh').value)||0,m=parseInt($('dm').value)||0,min=h*60+m;
+  if(min<=0){toast('Enter duration');return;}
+  const note=$('dnote').value.trim();
+  gd().dist.push({type,m:min,note,ts:Date.now()});
+  tlLog(DI[type]||'💭',`${type}: ${fmtMF(min)}`);
+  calcS();sv();renderHome();closeSh('distSh');$('dnote').value='';toast(`📊 ${type}: ${fmtMF(min)}`);
+}
+
+// JOURNAL
+let selM='😌';
+function selMood(el,e){selM=e;document.querySelectorAll('#moodrow span').forEach(s=>s.style.opacity='.4');el.style.opacity='1';}
+function saveJ(){
+  const txt=$('jtext').value.trim();if(!txt){toast('Write something');return;}
+  const tag=getP('jtpills');
+  S.journals.unshift({id:'j'+Date.now(),date:TODAY,time:new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'}),tag,mood:selM,text:txt});
+  sv();renderJ();closeSh('jSh');$('jtext').value='';toast('✓ Reflection saved');
+}
+let jTagFilter='all';
+function filtJ(tag,el){
+  document.querySelectorAll('#jfilt .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');
+  jTagFilter=tag;renderJ();
+}
+function renderJ(f){
+  const all=S.journals||[];const el=$('jlist');
+  const search=($('jsearch')&&$('jsearch').value.trim().toLowerCase())||'';
+  const tag=f||jTagFilter||'all';
+  const entries=all.filter(j=>{
+    const tagOk=tag==='all'||j.tag===tag;
+    const searchOk=!search||j.text.toLowerCase().includes(search)||j.tag.toLowerCase().includes(search)||(j.date||'').includes(search);
+    return tagOk&&searchOk;
+  });
+  if(!entries.length){el.innerHTML='<div class="empty"><div class="ei">📝</div><div class="et">'+(search?'No results':'No reflections yet')+'</div><div class="es">'+(search?'Try a different search term':'Tap + New to write your first reflection.')+'</div></div>';return;}
+  el.innerHTML=entries.map(j=>{
+    const c=TC[j.tag]||'var(--g)';
+    const txt=search?j.text.replace(new RegExp('('+search+')','gi'),'<mark style="background:rgba(201,168,75,.3);border-radius:3px;padding:0 2px">$1</mark>'):j.text;
+    return`<div class="je"><div class="jhdr"><div><div class="jdate">${j.date} · ${j.time}</div><div class="jtag" style="color:${c};background:${c}22">${j.tag}</div></div><div class="jmood">${j.mood}</div></div><div class="jtext">${txt}</div></div>`;
+  }).join('');
+}
+
+// NITNEM SHEET
+function renderNSh(){
+  const d=gd();
+  $('nshlist').innerHTML=NC.map(n=>{
+    const e=d.nitnem[n.id];const done=e&&e.done;
+    const t=done&&e.ts?new Date(e.ts).toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit'}):'';
+    return`<div class="bi" onclick="togN('${n.id}')">
+      <div class="bchk ${done?'on':''}" style="${done?'border-color:var(--t);background:var(--t);color:var(--d)':'border-color:var(--t)'}">${done?'✓':''}</div>
+      <div style="flex:1"><div class="bname ${done?'done':''}">${n.gur}</div><div class="bgur">${n.name}${done&&t?' · '+t:''}</div></div>
+    </div>`;
+  }).join('');
+  $('nshstr').innerHTML=NC.map(n=>`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b3)"><span style="font-size:12px;color:var(--t2)">${n.name}</span><span style="font-size:12px;font-weight:800;color:var(--t)">${nitnemCompletion(n.id,30)}/30 days</span></div>`).join('');
+}
+
+// ANALYTICS
+let curTab='overview';
+function doTab(tab,el){
+  curTab=tab;
+  if(el){document.querySelectorAll('#atabs .tb').forEach(t=>t.classList.remove('on'));el.classList.add('on');}
+  else{
+    document.querySelectorAll('#atabs .tb').forEach((t,i)=>{const tabs=['overview','banis','time','lifetime'];t.classList.toggle('on',tabs[i]===tab);});
+  }
+  renderA(tab);goView('analytics');
+}
+function renderA(tab){
+  applyNavVis();
+  const en=S.set.en||DEN;
+  const tabMap={overview:'at_ov',banis:'at_ba',time:'at_ti',lifetime:'at_li'};
+  if(tabMap[tab]&&en[tabMap[tab]]===false){
+    const firstOn=Object.keys(tabMap).find(t=>en[tabMap[t]]!==false);
+    tab=firstOn||'overview';curTab=tab;
+    document.querySelectorAll('#atabs .tb').forEach((t,i)=>{const tabs=['overview','banis','time','lifetime'];t.classList.toggle('on',tabs[i]===tab);});
+  }
+  const el=$('acontent');
+  if(tab==='overview')renderAO(el);
+  else if(tab==='banis')renderAB(el);
+  else if(tab==='time')renderAT(el);
+  else renderAL(el);
+}
+
+function renderAO(el){
+  const d=gd();const{ws,ds,pen,vpen,cbBonus,ip}=calcS();const en=S.set.en||DEN;
+  const wsc=[];for(let i=6;i>=0;i--){const dt=new Date();dt.setDate(dt.getDate()-i);const dd=S.days[mk(dt)];wsc.push({l:DN[dt.getDay()].slice(0,1),s:dd?dd.ws:0,p:dd&&dd.ip});}
+  const wavg=Math.round(wsc.reduce((a,x)=>a+x.s,0)/7);
+  const netAdj=cbBonus-pen-vpen;
+  el.innerHTML=`
+  <div class="sg2">
+    <div class="xc"><div class="xl">Current Streak</div><div class="xv g">${curStreak()}d 🔥</div></div>
+    <div class="xc"><div class="xl">Best Streak</div><div class="xv">${bestOverallStreak()}d</div></div>
+    <div class="xc"><div class="xl">Perfect Days</div><div class="xv gn">${lifetimePerfectDays()}</div><div class="xs">lifetime</div></div>
+    <div class="xc"><div class="xl">Week Avg</div><div class="xv t">${wavg}</div><div class="xs">/100</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Score This Week</div></div>
+  <div class="bcw"><div class="bci">${wsc.map(s=>`<div class="bcc"><div class="bcb" style="height:${Math.max(3,s.s*.76)}px;background:${s.p?'var(--gn)':s.s>=80?'var(--g)':s.s>=60?'var(--am)':'var(--s4)'}"></div><div class="bcl">${s.l}</div></div>`).join('')}</div></div>
+  <div class="shdr"><div class="stit2">Today's Score Breakdown</div></div>
+  <div class="seccard">${renderSBD(d)}</div>
+  <div class="shdr"><div class="stit2">Discipline Score</div></div>
+  <div class="seccard">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div><div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em">Weighted Completion</div><div style="font-size:30px;font-weight:800;color:var(--g);margin-top:3px">${ws}<span style="font-size:14px;color:var(--t3)">/100</span></div></div>
+      <div style="text-align:right"><div style="font-size:8px;color:${netAdj>=0?'var(--gn)':'var(--re)'};text-transform:uppercase;letter-spacing:.1em">Net Adjustment</div><div style="font-size:22px;font-weight:800;color:${netAdj>=0?'var(--gn)':'var(--re)'};margin-top:3px">${netAdj>=0?'+':''}${netAdj}</div></div>
+    </div>
+    <div style="height:1px;background:var(--b2);margin:10px 0"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:13px;color:var(--t2)">Final Discipline Score</div>
+      <div style="font-size:26px;font-weight:800;color:${ds>=80?'var(--gn)':ds>=60?'var(--am)':ds>=0?'var(--re)':'var(--re)'}">${ds}/100</div>
+    </div>
+  </div>
+  <div class="shdr"><div class="stit2">Practice Streaks</div></div>
+  <div class="seccard" style="padding:0 14px">
+    ${[en.gy&&{l:'💪 Gym',v:gymStreak()+'d',b:bestGymStreak()},en.va&&{l:'🎹 Vaja',v:vajaStreak()+'d',b:bestStreak(d=>d.vaja&&d.vaja.m>=(S.set.vt||45))},en.ta&&{l:'🥁 Tabla',v:tablaStreak()+'d',b:bestStreak(d=>d.tabla&&d.tabla.m>=(S.set.tt||30))},en.si&&{l:'📿 Simran',v:simStreak()+'d',b:bestStreak(d=>d.sim&&d.sim.m>=(S.set.sg||3)*60)}].filter(Boolean).map(x=>`<div class="ltrow"><div class="ltlbl">${x.l}</div><div style="display:flex;align-items:center;gap:10px">${x.b?`<div style="font-size:9px;color:var(--t3)">Best: ${x.b}d</div>`:'<div></div>'}<div style="font-size:14px;font-weight:800;color:var(--am)">🔥 ${x.v}</div></div></div>`).join('')||'<div style="padding:14px;font-size:11px;color:var(--t3);text-align:center">No active practice categories</div>'}
+  </div>
+  ${en.gy?`<div class="shdr"><div class="stit2">💪 Perfect Gym Weeks</div></div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Current Streak</div><div class="xv g">${currentPerfectGymWeekStreak()}wk</div></div>
+    <div class="xc"><div class="xl">Total Perfect</div><div class="xv gn">${totalPerfectGymWeeks()}</div></div>
+    <div class="xc"><div class="xl">Longest Streak</div><div class="xv am">${longestPerfectGymWeekStreak()}wk</div></div>
+    <div class="xc"><div class="xl">Consistency</div><div class="xv t">${gymWeekConsistency()}%</div></div>
+  </div>`:''}
+  <div class="shdr"><div class="stit2">Achievements</div></div>
+  ${renderACH()}`;
+}
+
+function renderSBD(d){
+  const s=S.set;const w=s.w;const en=s.en||DEN;
+  const rows=[
+    {on:en.b, l:'Daily Banis (×'+w.b+'pts)',p:Math.round((Object.values(d.banis).filter(x=>x.done).length/5)*w.b),mx:w.b},
+    {on:en.sm,l:'Morning Sehaj Paath',p:Math.round(Math.min(1,d.sehaj.m/20)*w.sm),mx:w.sm},
+    {on:en.sa,l:'Afternoon Sehaj Paath',p:Math.round(Math.min(1,d.sehaj.a/20)*w.sa),mx:w.sa},
+    {on:en.ch,l:'Chritropakhyan',p:Math.round(Math.min(1,d.ch.c/(s.ct||5))*w.ch),mx:w.ch},
+    {on:en.si,l:'Simran',p:Math.round(Math.min(1,d.sim.m/((s.sg||3)*60))*w.si),mx:w.si},
+    {on:en.gy,l:'Gym',p:d.gym.done?w.gy:0,mx:w.gy},
+    {on:en.va,l:'Vaja',p:Math.round(Math.min(1,d.vaja.m/(s.vt||45))*w.va),mx:w.va},
+    {on:en.ta,l:'Tabla',p:Math.round(Math.min(1,d.tabla.m/(s.tt||30))*w.ta),mx:w.ta},
+  ].filter(r=>r.on);
+  let html=rows.map(r=>`<div class="sbrow"><div class="sblabel">${r.l}</div><div class="sbbw"><div class="sbbf" style="width:${r.mx>0?Math.round(r.p/r.mx*100):0}%"></div></div><div class="sbpts">${r.p}/${r.mx}</div></div>`).join('');
+  if(en.cb!==false&&d.cbBonus>0)html+=`<div class="sbrow"><div class="sblabel" style="color:var(--gn)">Additional Banis Bonus</div><div class="sbpts" style="color:var(--gn)">+${d.cbBonus}</div></div>`;
+  if(d.pen>0)html+=`<div class="sbrow"><div class="sblabel" style="color:var(--re)">Distraction Penalty</div><div class="sbpts" style="color:var(--re)">−${d.pen}</div></div>`;
+  if(en.vk&&d.vpen>0)html+=`<div class="sbrow"><div class="sblabel" style="color:var(--re)">Panj Vikar Penalty</div><div class="sbpts" style="color:var(--re)">−${d.vpen}</div></div>`;
+  return html;
+}
+
+function renderACH(){
+  const simH=Math.floor(lifetimeMin('sim')/60),vajaH=Math.floor(lifetimeMin('vaja')/60),tablaH=Math.floor(lifetimeMin('tabla')/60);
+  const sa=ltSA();const p=lifetimePerfectDays();
+  return[
+    {i:'⭐',n:'First Perfect Day',d:'Complete all 8 practices in one day',e:p>=1},
+    {i:'🔥',n:'7 Perfect Days',d:'7 perfect days total',e:p>=7},
+    {i:'🏆',n:'30 Perfect Days',d:'30 perfect days total',e:p>=30},
+    {i:'💎',n:'100 Perfect Days',d:'100 perfect days total',e:p>=100},
+    {i:'📿',n:'100 Hours Simran',d:'100 hours of Simran',e:simH>=100},
+    {i:'🌟',n:'500 Hours Simran',d:'500 hours of Simran',e:simH>=500},
+    {i:'📜',n:'1,000 Angs',d:'1,000 Sehaj Paath angs completed',e:sa>=1000},
+    {i:'📖',n:'5,000 Angs',d:'5,000 Sehaj Paath angs completed',e:sa>=5000},
+    {i:'🎹',n:'100 Hours Vaja',d:'100 hours of Harmonium practice',e:vajaH>=100},
+    {i:'🥁',n:'100 Hours Tabla',d:'100 hours of Tabla practice',e:tablaH>=100},
+    {i:'💪',n:'Gym 100',d:'100 gym sessions completed',e:lifetimeGymCount()>=100},
+    {i:'🌙',n:'365-Day Streak',d:'365 consecutive days of discipline',e:bestOverallStreak()>=365},
+  ].map(a=>`<div class="ach ${a.e?'e':''}"><div class="ai">${a.i}</div><div style="flex:1"><div class="aname">${a.n}</div><div class="adesc">${a.d}</div></div><div class="ab ${a.e?'':'lk'}">${a.e?'Earned':'Locked'}</div></div>`).join('');
+}
+
+function renderAB(el){
+  const td=Math.max(1,Object.keys(S.days).length);
+  const br=BC.map(b=>{let c=0;Object.values(S.days).forEach(d=>{if(d.banis&&d.banis[b.id]&&d.banis[b.id].done)c++;});return{...b,c,pct:Math.round(c/td*100)};});
+  const bw=BC.map(b=>{let c=0;for(let i=0;i<7;i++){const dt=new Date();dt.setDate(dt.getDate()-i);const dd=S.days[mk(dt)];if(dd&&dd.banis&&dd.banis[b.id]&&dd.banis[b.id].done)c++;}return c;});
+  el.innerHTML=`
+  <div class="shdr"><div class="stit2">Daily Bani Completion Rates</div></div>
+  <div class="seccard">${br.map(b=>`<div style="padding:10px 0;border-bottom:1px solid var(--b3)"><div style="display:flex;justify-content:space-between;margin-bottom:5px"><div style="font-size:12px;color:var(--tx)">${b.name}</div><div style="font-size:11px;font-weight:800;color:var(--g)">${b.c}d · ${b.pct}%</div></div><div style="height:5px;background:var(--s3);border-radius:3px;overflow:hidden"><div style="height:100%;border-radius:3px;background:var(--g);width:${b.pct}%"></div></div></div>`).join('')}</div>
+  <div class="shdr"><div class="stit2">7-Day Grid</div></div>
+  <div class="seccard">${BC.map((b,i)=>`<div style="display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--b3)"><div style="font-size:11px;color:var(--t2);flex:1">${b.name}</div><div style="display:flex;gap:3px">${Array(7).fill(0).map((_,dd)=>{const dt=new Date();dt.setDate(dt.getDate()-(6-dd));const ddd=S.days[mk(dt)];const done=ddd&&ddd.banis&&ddd.banis[b.id]&&ddd.banis[b.id].done;return`<div style="width:11px;height:11px;border-radius:2px;background:${done?'var(--g)':'var(--s3)'}"></div>`;}).join('')}</div><div style="font-size:11px;font-weight:800;color:var(--g);min-width:24px;text-align:right">${bw[i]}/7</div></div>`).join('')}</div>
+  <div class="shdr"><div class="stit2">Bani Streaks</div></div>
+  <div class="seccard" style="padding:0 14px">${BC.map(b=>`<div class="ltrow"><div class="ltlbl">${b.name}</div><div style="display:flex;align-items:center;gap:12px"><div style="font-size:10px;color:var(--t3)">${(()=>{let mc=0;const nn=new Date();Object.entries(S.days).forEach(([k,d])=>{const dk=new Date(k);if(dk.getFullYear()===nn.getFullYear()&&dk.getMonth()===nn.getMonth()&&d.banis&&d.banis[b.id]&&d.banis[b.id].done)mc++;});return mc;})()}d this month</div><div style="font-size:13px;font-weight:800;color:var(--am)">🔥 ${bStr(b.id)}d</div></div></div>`).join('')}</div>
+  <div class="shdr"><div class="stit2">Sehaj Paath</div></div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Today</div><div class="xv g">${(gd().sehaj.m||0)+(gd().sehaj.a||0)}<span style="font-size:11px;color:var(--t3)">/40</span></div><div class="xs">angs</div></div>
+    <div class="xc"><div class="xl">This Week</div><div class="xv t">${wkSA()}</div><div class="xs">angs</div></div>
+    <div class="xc"><div class="xl">This Month</div><div class="xv">${mthSA()}</div><div class="xs">angs</div></div>
+    <div class="xc"><div class="xl">Lifetime</div><div class="xv p">${ltSA().toLocaleString()}</div><div class="xs">angs</div></div>
+    <div class="xc"><div class="xl">Morning Avg</div><div class="xv am">${(()=>{const days=Math.max(1,Object.keys(S.days).length);return Math.round(Object.values(S.days).reduce((a,d)=>a+(d.sehaj.m||0),0)/days);})()}</div><div class="xs">angs/day</div></div>
+    <div class="xc"><div class="xl">Afternoon Avg</div><div class="xv am">${(()=>{const days=Math.max(1,Object.keys(S.days).length);return Math.round(Object.values(S.days).reduce((a,d)=>a+(d.sehaj.a||0),0)/days);})()}</div><div class="xs">angs/day</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Chritropakhyan</div></div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Today</div><div class="xv g">${gd().ch.c}</div></div>
+    <div class="xc"><div class="xl">This Week</div><div class="xv">${wkCh()}</div></div>
+    <div class="xc"><div class="xl">This Month</div><div class="xv t">${mthCh()}</div></div>
+    <div class="xc"><div class="xl">Lifetime</div><div class="xv p">${ltCh()}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Nitnem Completion</div></div>
+  <div class="seccard" style="padding:0 14px">${NC.map(n=>{let mc=0;const now2=new Date();Object.entries(S.days).forEach(([k,d])=>{const dk=new Date(k);if(dk.getFullYear()===now2.getFullYear()&&dk.getMonth()===now2.getMonth()&&d.nitnem&&d.nitnem[n.id]&&d.nitnem[n.id].done)mc++;});const lc=nitnemCompletion(n.id,99999);return`<div class="ltrow"><div class="ltlbl">${n.name}</div><div style="display:flex;align-items:center;gap:10px"><div style="font-size:10px;color:var(--t3)">${mc}d this month</div><div style="font-size:13px;font-weight:800;color:var(--t)">${lc}d lifetime</div></div></div>`;}).join('')}</div>`;
+}
+
+function renderAT(el){
+  const ad={};let tdm=0;
+  Object.values(S.days).forEach(d=>{(d.dist||[]).forEach(x=>{ad[x.type]=(ad[x.type]||0)+x.m;tdm+=x.m;});});
+  const mx=Math.max(...Object.values(ad),1);
+  el.innerHTML=`
+  <div class="shdr"><div class="stit2">Where Your Time Went — All Time</div></div>
+  <div class="seccard" style="padding:0 14px">
+    ${Object.keys(ad).length===0?'<div style="text-align:center;padding:16px;font-size:11px;color:var(--gn)">✓ No distractions recorded</div>':
+      Object.entries(ad).sort((a,b)=>b[1]-a[1]).map(([t,m])=>`<div class="trow"><div class="tico">${DI[t]||'💭'}</div><div class="tlabel">${t}</div><div class="tbarw"><div class="tbarbg"><div class="tbarf" style="width:${Math.round(m/mx*100)}%;background:var(--re)"></div></div></div><div class="tvl" style="color:var(--re)">${fmtMF(m)}</div></div>`).join('')}
+  </div>
+  ${tdm>0?`<div class="cc"><strong>⚠️ Lifetime reality check:</strong><br>
+    ${fmtMF(tdm)} total in distractions ≈ <strong>${Math.round(tdm/60)} Sukhmani Sahib</strong> completions · <strong>${Math.round(tdm/60)} hours of Simran</strong> · <strong>${Math.round(tdm/40)} Sehaj Paath</strong> sessions.
+  </div>`:''}
+  ${(()=>{let wdm=0;for(let i=0;i<7;i++){const dt=new Date();dt.setDate(dt.getDate()-i);const dd=S.days[mk(dt)];if(dd)(dd.dist||[]).forEach(x=>wdm+=x.m);}
+    return wdm>0?`<div class="cc" style="border-color:rgba(232,163,74,.2);background:rgba(232,163,74,.05)">
+      <strong style="color:var(--am)">📊 This week specifically:</strong><br>
+      ${fmtMF(wdm)} in distractions = <strong style="color:var(--am)">${Math.round(wdm/60)} Sukhmani Sahib</strong> completions you could have done · <strong style="color:var(--am)">${Math.round(wdm/60)}h Simran</strong> · <strong style="color:var(--am)">${Math.round(wdm/40)} Sehaj Paath sessions</strong>.
+    </div>`:'';})()}
+  <div class="shdr"><div class="stit2">Practice Time Invested</div></div>
+  <div class="seccard" style="padding:0 14px">
+    <div class="trow"><div class="tico">📿</div><div class="tlabel">Simran (lifetime)</div><div class="tvl" style="color:var(--p)">${fmtMF(lifetimeMin('sim'))}</div></div>
+    <div class="trow"><div class="tico">🎹</div><div class="tlabel">Vaja (lifetime)</div><div class="tvl" style="color:var(--g)">${fmtMF(lifetimeMin('vaja'))}</div></div>
+    <div class="trow"><div class="tico">🥁</div><div class="tlabel">Tabla (lifetime)</div><div class="tvl" style="color:var(--am)">${fmtMF(lifetimeMin('tabla'))}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Year-End Projections</div></div>
+  ${renderProj()}`;
+}
+
+function renderProj(){
+  const days=Math.max(1,Object.keys(S.days).length);
+  const now=new Date();const yrStart=new Date(now.getFullYear(),0,1);
+  const dayOfYear=Math.floor((now-yrStart)/86400000)+1;const dl=365-dayOfYear;
+  const ls=lifetimeMin('sim'),lp=lifetimePerfectDays();
+  const sa=ltSA()/days;const sim=ls/days;const pp=lp/days;
+  return`
+  <div class="pj"><div class="pjico">📜</div><div><div class="pjlbl">Sehaj Paath Angs by Year End</div><div class="pjval">${Math.round(ltSA()+sa*dl).toLocaleString()}</div><div class="pjsub">~${Math.round(sa*10)/10} avg/day</div></div></div>
+  <div class="pj"><div class="pjico">📿</div><div><div class="pjlbl">Simran Hours by Year End</div><div class="pjval">${Math.round(ls/60+sim/60*dl)}h</div><div class="pjsub">~${Math.round(sim)} min/day avg</div></div></div>
+  <div class="pj"><div class="pjico">🌟</div><div><div class="pjlbl">Perfect Days by Year End</div><div class="pjval">${Math.round(lp+pp*dl)}</div><div class="pjsub">~${Math.round(pp*100)}% of days</div></div></div>`;
+}
+
+function renderAL(el){
+  const bc={};BC.forEach(b=>{bc[b.id]=0;});Object.values(S.days).forEach(d=>{BC.forEach(b=>{if(d.banis&&d.banis[b.id]&&d.banis[b.id].done)bc[b.id]++;});});
+  el.innerHTML=`
+  <div class="shdr"><div class="stit2">Lifetime — Daily Banis</div></div>
+  <div class="seccard" style="padding:0 14px">${BC.map(b=>`<div class="ltrow"><div class="ltlbl">📖 ${b.name}</div><div class="ltval">${bc[b.id]}</div></div>`).join('')}</div>
+  <div class="shdr"><div class="stit2">Lifetime — Practice Hours</div></div>
+  <div class="seccard" style="padding:0 14px">
+    <div class="ltrow"><div class="ltlbl">📿 Simran</div><div class="ltval">${Math.floor(lifetimeMin('sim')/60)}h ${lifetimeMin('sim')%60}m</div></div>
+    <div class="ltrow"><div class="ltlbl">🎹 Vaja</div><div class="ltval">${Math.floor(lifetimeMin('vaja')/60)}h</div></div>
+    <div class="ltrow"><div class="ltlbl">🥁 Tabla</div><div class="ltval">${Math.floor(lifetimeMin('tabla')/60)}h</div></div>
+    <div class="ltrow" style="border:none"><div class="ltlbl">💪 Gym Sessions</div><div class="ltval">${lifetimeGymCount()}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">💪 Perfect Gym Weeks (4+ days/week)</div></div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Current Streak</div><div class="xv g">${currentPerfectGymWeekStreak()}wk</div></div>
+    <div class="xc"><div class="xl">Total Perfect</div><div class="xv gn">${totalPerfectGymWeeks()}</div></div>
+    <div class="xc"><div class="xl">Longest Streak</div><div class="xv am">${longestPerfectGymWeekStreak()}wk</div></div>
+    <div class="xc"><div class="xl">Consistency</div><div class="xv t">${gymWeekConsistency()}%</div></div>
+  </div>
+  <div class="seccard" style="padding:0 14px">${recentGymWeeksHTML(8)}</div>
+  <div class="shdr"><div class="stit2">Lifetime — Sehaj Paath</div></div>
+  <div class="sg2">
+    <div class="xc"><div class="xl">Total Angs</div><div class="xv g">${ltSA().toLocaleString()}</div></div>
+    <div class="xc"><div class="xl">Chritro Angs</div><div class="xv t">${ltCh()}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Lifetime — Milestones</div></div>
+  <div class="seccard" style="padding:0 14px">
+    <div class="ltrow"><div class="ltlbl">🌟 Perfect Days</div><div class="ltval" style="color:var(--gn)">${lifetimePerfectDays()}</div></div>
+    <div class="ltrow"><div class="ltlbl">🔥 Best Streak</div><div class="ltval">${bestOverallStreak()}d</div></div>
+    <div class="ltrow"><div class="ltlbl">📅 Days Tracked</div><div class="ltval">${Object.keys(S.days).length}</div></div>
+    <div class="ltrow" style="border:none"><div class="ltlbl">📊 Avg Discipline Score</div><div class="ltval">${avgDS()}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Lifetime — Panj Vikar</div></div>
+  <div class="seccard" style="padding:0 14px">
+    <div class="ltrow"><div class="ltlbl">Kaam (lust)</div><div class="ltval">${lifetimeVikar('kaam')}</div></div>
+    <div class="ltrow"><div class="ltlbl">Krodh (anger)</div><div class="ltval">${lifetimeVikar('krodh')}</div></div>
+    <div class="ltrow"><div class="ltlbl">Lobh (greed)</div><div class="ltval">${lifetimeVikar('lobh')}</div></div>
+    <div class="ltrow"><div class="ltlbl">Moh (attachment)</div><div class="ltval">${lifetimeVikar('moh')}</div></div>
+    <div class="ltrow" style="border:none"><div class="ltlbl">Hankar (ego)</div><div class="ltval">${lifetimeVikar('hankar')}</div></div>
+  </div>
+  <div class="shdr"><div class="stit2">Year-End Projections</div></div>
+  ${renderProj()}`;
+}
+
+// CALENDAR
+let calY=new Date().getFullYear(),calM=new Date().getMonth();
+function renderCal(){
+  $('calmth').textContent=MN[calM]+' '+calY;
+  $('caldns').innerHTML=DN.map(d=>`<div class="cdn">${d[0]}</div>`).join('');
+  const first=new Date(calY,calM,1).getDay();const days=new Date(calY,calM+1,0).getDate();const now=new Date();
+  let h='';for(let i=0;i<first;i++)h+='<div class="cday empty"></div>';
+  for(let d=1;d<=days;d++){
+    const k=calY+'-'+String(calM+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
+    const dd=S.days[k];const it=calY===now.getFullYear()&&calM===now.getMonth()&&d===now.getDate();
+    let c='';if(dd&&dd.ws>0){if(dd.ip)c='perfect';else if(dd.ws>=80)c='strong';else if(dd.ws>=40)c='partial';else c='missed';}
+    if(it)c+=' today';
+    h+=`<div class="cday ${c}" onclick="openDay('${k}')">${d}</div>`;
+  }
+  $('calgrid').innerHTML=h;
+  renderHM();
+}
+function calNav(d){calM+=d;if(calM<0){calM=11;calY--;}if(calM>11){calM=0;calY++;}renderCal();}
+function renderHM(){
+  const now=new Date();const cols=[];
+  for(let i=363;i>=0;i--){const d=new Date(now);d.setDate(d.getDate()-i);const k=mk(d);const dd=S.days[k];let c='';if(dd&&dd.ws>0){if(dd.ip)c='pf';else if(dd.ws>=80)c='l4';else if(dd.ws>=60)c='l3';else if(dd.ws>=30)c='l2';else c='l1';}const col=Math.floor((363-i)/7);if(!cols[col])cols[col]=[];cols[col].push({k,c});}
+  $('hmap').innerHTML=cols.map(col=>`<div class="hmc">${col.map(x=>`<div class="hms ${x.c}" onclick="openDay('${x.k}')" title="${x.k}"></div>`).join('')}</div>`).join('');
+}
+function openDay(k){
+  const dd=S.days[k];$('daytit').textContent='📅 '+k;
+  if(!dd||dd.ws===0){$('daycont').innerHTML='<div class="empty"><div class="ei">📅</div><div class="et">No data</div><div class="es">No practices logged for this date.</div></div>';}
+  else{
+    const bd=Object.values(dd.banis||{}).filter(b=>b.done).length;
+    $('daycont').innerHTML=`<div class="seccard" style="margin:0 0 12px"><div style="display:flex;justify-content:space-between;margin-bottom:8px"><div><div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em">Weighted</div><div style="font-size:30px;font-weight:800;color:var(--g)">${dd.ws}</div></div><div style="text-align:right"><div style="font-size:8px;color:var(--t3);text-transform:uppercase;letter-spacing:.1em">Discipline</div><div style="font-size:30px;font-weight:800;color:var(--t)">${dd.ds||0}</div></div></div>${dd.ip?'<div style="font-size:12px;color:var(--gn);font-weight:800">🌟 Perfect Day!</div>':''}</div>
+    <div class="seccard" style="margin:0;padding:0 14px"><div class="ltrow"><div class="ltlbl">📖 Daily Banis</div><div class="ltval" style="font-size:13px">${bd}/5</div></div><div class="ltrow"><div class="ltlbl">📜 Sehaj Paath</div><div class="ltval" style="font-size:13px">${(dd.sehaj.m||0)+(dd.sehaj.a||0)} angs</div></div><div class="ltrow"><div class="ltlbl">📝 Chritropakhyan</div><div class="ltval" style="font-size:13px">${dd.ch.c||0} angs</div></div><div class="ltrow"><div class="ltlbl">📿 Simran</div><div class="ltval" style="font-size:13px">${fmtMF(dd.sim.m||0)}</div></div><div class="ltrow"><div class="ltlbl">💪 Gym</div><div class="ltval" style="font-size:13px;color:${dd.gym.done?'var(--gn)':'var(--t3)'}">${dd.gym.done?'✓ Done':'–'}</div></div><div class="ltrow"><div class="ltlbl">🎹 Vaja</div><div class="ltval" style="font-size:13px">${dd.vaja.m||0}m</div></div><div class="ltrow"><div class="ltlbl">🥁 Tabla</div><div class="ltval" style="font-size:13px">${dd.tabla.m||0}m</div></div><div class="ltrow" style="border:none"><div class="ltlbl">⚖️ Panj Vikar</div><div class="ltval" style="font-size:13px;color:${vikarCount(dd)>0?'var(--re)':'var(--gn)'}">${vikarCount(dd)>0?vikarCount(dd)+' lapse'+(vikarCount(dd)>1?'s':''):'None ✓'}</div></div></div>`;
+  }
+  openSh('daySh');
+}
+
+// PROFILE
+function renderProf(){
+  $('profdays').textContent=Object.keys(S.days).length;$('profavg').textContent=avgDS();
+  $('profgrid').innerHTML=`<div class="sg2" style="margin:0 0 8px"><div class="xc"><div class="xl">Current Streak</div><div class="xv g">${curStreak()}d</div></div><div class="xc"><div class="xl">Best Streak</div><div class="xv">${bestOverallStreak()}d</div></div><div class="xc"><div class="xl">Perfect Days</div><div class="xv gn">${lifetimePerfectDays()}</div></div><div class="xc"><div class="xl">Days Tracked</div><div class="xv t">${Object.keys(S.days).length}</div></div></div>`;
+  $('profach').innerHTML=renderACH();
+}
+
+// SETTINGS
+const EN_KEYS=['b','n','sm','sa','ch','si','gy','va','ta','vk','score','cb','dist','tl','nv_si','nv_pr','nv_an','nv_ca','nv_jo','at_ov','at_ba','at_ti','at_li','rm_av','rm_sp','rm_hp'];
+function loadSetUI(){
+  const s=S.set;const w=s.w||DW;const en=s.en||DEN;const vp=s.vikpen||DVK;
+  $('s-sg').value=s.sg||3;$('s-ct').value=s.ct||5;$('s-vt').value=s.vt||45;$('s-tt').value=s.tt||30;
+  $('s-as').value=s.as||'03:00';$('s-ae').value=s.ae||'06:00';
+  $('w-b').value=w.b;$('w-sm').value=w.sm;$('w-sa').value=w.sa;$('w-ch').value=w.ch;
+  $('w-si').value=w.si;$('w-gy').value=w.gy;$('w-va').value=w.va;$('w-ta').value=w.ta;
+  const pv=s.pen||{a:0,b:2,c:5,d:10,e:15,f:25};
+  ['a','b','c','d','e','f'].forEach(k=>{const el=$('p-'+k);if(el)el.value=pv[k]||0;});
+  VK.forEach(it=>{const el=$('vk-'+it.k);if(el)el.value=vp[it.k]!=null?vp[it.k]:DVK[it.k];});
+  EN_KEYS.forEach(k=>{const el=$('en-'+k);if(el)el.classList.toggle('on',en[k]!==false);});
+}
+function saveSettings(){
+  const g=id=>parseFloat($(id).value)||0;
+  const en={};EN_KEYS.forEach(k=>{const el=$('en-'+k);en[k]=el?el.classList.contains('on'):true;});
+  const vikpen={};VK.forEach(it=>{vikpen[it.k]=Math.max(1,g('vk-'+it.k)||DVK[it.k]);});
+  S.set={...S.set,sg:g('s-sg'),ct:parseInt($('s-ct').value)||5,vt:g('s-vt'),tt:g('s-tt'),as:$('s-as').value,ae:$('s-ae').value,
+    w:{b:g('w-b'),sm:g('w-sm'),sa:g('w-sa'),ch:g('w-ch'),si:g('w-si'),gy:g('w-gy'),va:g('w-va'),ta:g('w-ta')},
+    en,vikpen,
+    pen:{a:g('p-a'),b:g('p-b'),c:g('p-c'),d:g('p-d'),e:g('p-e'),f:g('p-f')}};
+  sv();calcS();
+  // if the view or analytics tab the user is currently on just got switched off, send them home / to the first available tab
+  const navMap={simran:'nv_si',practice:'nv_pr',analytics:'nv_an',calendar:'nv_ca',journal:'nv_jo'};
+  if(navMap[cv]&&en[navMap[cv]]===false)goView('home');
+  const tabMap={overview:'at_ov',banis:'at_ba',time:'at_ti',lifetime:'at_li'};
+  if(tabMap[curTab]&&en[tabMap[curTab]]===false){
+    const firstOn=Object.keys(tabMap).find(t=>en[tabMap[t]]!==false);
+    if(firstOn)curTab=firstOn;
+  }
+  applyNavVis();
+  renderHome();renderPView();renderSimView();closeSh('settingsSh');toast('✓ Settings saved');
+}
+function exportCSV(){
+  const rows=[['Date','WeightedScore','DisciplineScore','PerfectDay','BanisDone','SehajMorning','SehajAfternoon','ChritroAngs','SimranMin','GymDone','VajaMin','TablaMin','DistractionMin']];
+  Object.entries(S.days).sort().forEach(([k,d])=>{
+    const bd=Object.values(d.banis||{}).filter(x=>x.done).length;
+    const dm=(d.dist||[]).reduce((a,x)=>a+x.m,0);
+    rows.push([k,d.ws||0,d.ds||0,d.ip?1:0,bd,d.sehaj.m||0,d.sehaj.a||0,d.ch.c||0,d.sim.m||0,d.gym.done?1:0,d.vaja.m||0,d.tabla.m||0,dm]);
+  });
+  const csv=rows.map(r=>r.join(',')).join('\n');
+  const blob=new Blob([csv],{type:'text/csv'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='amritvela_'+TODAY+'.csv';a.click();URL.revokeObjectURL(url);toast('✓ CSV exported');
+}
+function importData(){$('importFile').click();}
+function handleImport(e){
+  const file=e.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=ev=>{try{const p=JSON.parse(ev.target.result);S={set:{...S.set,...p.set,w:{...DW,...(p.set?.w||{})},en:{...DEN,...(p.set?.en||{})},vikpen:normVikpen(p.set?.vikpen)},days:p.days||{},cb:p.cb||[],journals:p.journals||[]};sv();renderHome();renderJ();toast('✓ Backup restored!');}catch(err){toast('❌ Invalid backup file');}};
+  reader.readAsText(file);e.target.value='';
+}
+let pendingConfirmAction=null;
+function showConfirm(title,msg,actionFn){
+  $('confirmTit').textContent=title;
+  $('confirmMsg').textContent=msg;
+  pendingConfirmAction=actionFn;
+  openSh('confirmSh');
+}
+function runPendingConfirm(){
+  const fn=pendingConfirmAction;
+  pendingConfirmAction=null;
+  closeSh('confirmSh');
+  if(fn)fn();
+}
+function resetAllProgress(){
+  showConfirm('⚠️ Reset All Progress?',
+    'This permanently erases ALL tracked progress — completion history, streaks, perfect days, weighted/discipline scores, calendar history, daily timelines, Sehaj Paath progress, Chritropakhyan progress, Simran sessions, Gym/Vaja/Tabla history, Additional Banis completion, journal entries, analytics, heatmaps, and achievements.\n\nYour settings stay exactly as they are — goals, scoring weights, category toggles, Panj Vikar penalties, reminder times, and your custom Additional Banis list (the banis themselves, just not their completion history) are all kept.\n\nThis cannot be undone.',
+    ()=>{
+      S.days={};S.journals=[];
+      TODAY=mk();S.days[TODAY]=mkDay();
+      sv();renderHome();renderJ();closeSh('settingsSh');
+      toast('✓ Progress reset — settings kept');
+    });
+}
+function resetAllData(){
+  showConfirm('⚠️ Reset All Data?',
+    'This permanently erases every tracked day, journal entry, custom bani, and setting. This cannot be undone.',
+    ()=>{
+      try{localStorage.removeItem(SK);}catch(e){}
+      S={set:{sg:3,ct:5,vt:45,tt:30,as:'03:00',ae:'06:00',w:{...DW},en:{...DEN},vikpen:{...DVK},vf:'',tf:''},days:{},cb:[],journals:[]};
+      TODAY=mk();S.days[TODAY]=mkDay();
+      sv();renderHome();renderJ();closeSh('settingsSh');
+      toast('✓ All data reset');
+    });
+}
+function exportJSON(){
+  const blob=new Blob([JSON.stringify(S,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='amritvela_'+TODAY+'.json';a.click();URL.revokeObjectURL(url);toast('✓ Exported');
+}
+
+// NAV
+let cv='home';
+function goView(v){
+  document.querySelectorAll('.view').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.nb').forEach(e=>e.classList.remove('active'));
+  $('view-'+v).classList.add('active');$('nav-'+v).classList.add('active');
+  $('vb').scrollTop=0;cv=v;
+  if(v==='analytics')renderA(curTab);if(v==='calendar')renderCal();
+  if(v==='journal')renderJ();if(v==='simran')renderSimView();
+  if(v==='practice')renderPView();if(v==='home')renderHome();
+}
+
+// SHEETS
+function openSh(id){
+  document.getElementById(id).classList.add('open');
+  if(id==='nitnemSh')renderNSh();if(id==='profileSh')renderProf();if(id==='settingsSh')loadSetUI();
+}
+function closeSh(id){document.getElementById(id).classList.remove('open');}
+function closeO(el){if(el===event.target)closeSh(el.id);}
+
+// PILLS
+function selP(el,gid){document.getElementById(gid).querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));el.classList.add('on');}
+function getP(gid){const a=document.getElementById(gid).querySelector('.pill.on');return a?(a.dataset.v||a.textContent.trim()):'';}
+
+// HELPERS
+function $(id){return document.getElementById(id);}
+function fmtS(s){const h=Math.floor(s/3600),m=Math.floor(s%3600/60),sec=s%60;return h+':'+String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');}
+function fmtS2(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+function fmtM(m){const h=Math.floor(m/60),mn=m%60;return h>0?h+'h '+mn+'m':mn+'m';}
+function fmtMF(m){if(m<=0)return'0m';const h=Math.floor(m/60),mn=m%60;return h>0?h+'h'+(mn>0?' '+mn+'m':''):mn+'m';}
+function bStr(id){let s=0;const n=new Date();for(let i=0;i<365;i++){const d=new Date(n);d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd&&dd.banis&&dd.banis[id]&&dd.banis[id].done)s++;else if(i>0)break;}return s;}
+function nitnemCompletion(id,days){let c=0;const n=new Date();for(let i=0;i<days;i++){const d=new Date(n);d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd&&dd.nitnem&&dd.nitnem[id]&&dd.nitnem[id].done)c++;}return c;}
+// Generic computed streaks — derive directly from S.days instead of incremental counters
+// that drift or freeze when a day is skipped (no background process exists to "roll over"
+// a day boundary in this single-page app, so any counter that isn't recomputed live will
+// eventually disagree with reality).
+function genStreak(check){let s=0;const n=new Date();for(let i=0;i<365;i++){const d=new Date(n);d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd&&check(dd))s++;else if(i>0)break;}return s;}
+function bestStreak(check){let best=0,run=0;const n=new Date();for(let i=364;i>=0;i--){const d=new Date(n);d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd&&check(dd)){run++;if(run>best)best=run;}else run=0;}return best;}
+function curStreak(){return genStreak(d=>d.ws>0);}
+function bestOverallStreak(){return bestStreak(d=>d.ws>0);}
+function gymStreak(){return genStreak(d=>d.gym&&d.gym.done);}
+function bestGymStreak(){return bestStreak(d=>d.gym&&d.gym.done);}
+
+// PERFECT GYM WEEK — a calendar week (Sun-Sat) with 4+ gym days counts as "perfect"
+function weekStartOf(d){const dt=new Date(d);dt.setHours(0,0,0,0);dt.setDate(dt.getDate()-dt.getDay());return dt;}
+function gymCountForWeek(weekStart){
+  let c=0;
+  for(let i=0;i<7;i++){const dt=new Date(weekStart);dt.setDate(dt.getDate()+i);const dd=S.days[mk(dt)];if(dd&&dd.gym&&dd.gym.done)c++;}
+  return c;
+}
+function allGymWeeks(){
+  const keys=Object.keys(S.days);if(!keys.length)return[];
+  const dates=keys.map(k=>new Date(k+'T00:00:00'));
+  let ws=weekStartOf(dates.reduce((a,b)=>a<b?a:b));
+  const curWS=weekStartOf(new Date());
+  const weeks=[];
+  while(ws<=curWS){
+    const cnt=gymCountForWeek(ws);
+    weeks.push({start:new Date(ws),count:cnt,perfect:cnt>=4,current:ws.getTime()===curWS.getTime()});
+    ws.setDate(ws.getDate()+7);
+  }
+  return weeks;
+}
+function currentPerfectGymWeekStreak(){
+  const weeks=allGymWeeks();let i=weeks.length-1;
+  if(i<0)return 0;
+  if(weeks[i].current&&!weeks[i].perfect)i--; // an in-progress, not-yet-perfect week is pending, not a break
+  let s=0;for(;i>=0;i--){if(weeks[i].perfect)s++;else break;}
+  return s;
+}
+function totalPerfectGymWeeks(){return allGymWeeks().filter(w=>w.perfect).length;}
+function longestPerfectGymWeekStreak(){
+  const weeks=allGymWeeks();let best=0,run=0;
+  weeks.forEach(w=>{if(w.perfect){run++;if(run>best)best=run;}else run=0;});
+  return best;
+}
+function gymWeekConsistency(){
+  const weeks=allGymWeeks().filter(w=>!w.current); // only fully-elapsed weeks count toward a consistency %
+  if(!weeks.length)return 0;
+  return Math.round(weeks.filter(w=>w.perfect).length/weeks.length*100);
+}
+function recentGymWeeksHTML(n){
+  const weeks=allGymWeeks().slice(-n).reverse();
+  if(!weeks.length)return'<div style="padding:14px;font-size:11px;color:var(--t3);text-align:center">No weeks tracked yet</div>';
+  return weeks.map(w=>{
+    const end=new Date(w.start);end.setDate(end.getDate()+6);
+    const sameMo=w.start.getMonth()===end.getMonth();
+    const label=`${MN[w.start.getMonth()].slice(0,3)} ${w.start.getDate()}–${sameMo?'':MN[end.getMonth()].slice(0,3)+' '}${end.getDate()}`;
+    return`<div class="ltrow"><div class="ltlbl">${label}${w.current?' (this week)':''}</div><div style="display:flex;align-items:center;gap:8px"><div style="font-size:11px;color:var(--t3)">${w.count}/7</div><div style="font-size:12px">${w.perfect?'✅':w.current?'⏳':'—'}</div></div></div>`;
+  }).join('');
+}
+function vajaStreak(){return genStreak(d=>d.vaja&&d.vaja.m>=(S.set.vt||45));}
+function tablaStreak(){return genStreak(d=>d.tabla&&d.tabla.m>=(S.set.tt||30));}
+function simStreak(){return genStreak(d=>d.sim&&d.sim.m>=(S.set.sg||3)*60);}
+function lifetimePerfectDays(){return Object.values(S.days).filter(d=>d.ip).length;}
+function lifetimeGymCount(){return Object.values(S.days).filter(d=>d.gym&&d.gym.done).length;}
+function lifetimeMin(field){return Object.values(S.days).reduce((a,d)=>a+((d[field]&&d[field].m)||0),0);}
+function wkM(f){let t=0;for(let i=0;i<7;i++){const d=new Date();d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd)t+=(dd[f]&&dd[f].m)||0;}return t;}
+function mthM(f){let t=0;const n=new Date();Object.entries(S.days).forEach(([k,d])=>{const dk=new Date(k);if(dk.getFullYear()===n.getFullYear()&&dk.getMonth()===n.getMonth())t+=(d[f]&&d[f].m)||0;});return t;}
+function wkSA(){let t=0;for(let i=0;i<7;i++){const d=new Date();d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd)t+=(dd.sehaj.m||0)+(dd.sehaj.a||0);}return t;}
+function mthSA(){let t=0;const n=new Date();Object.entries(S.days).forEach(([k,d])=>{const dk=new Date(k);if(dk.getFullYear()===n.getFullYear()&&dk.getMonth()===n.getMonth())t+=(d.sehaj.m||0)+(d.sehaj.a||0);});return t;}
+function ltSA(){return Object.values(S.days).reduce((a,d)=>a+(d.sehaj?(d.sehaj.m||0)+(d.sehaj.a||0):0),0);}
+function wkCh(){let t=0;for(let i=0;i<7;i++){const d=new Date();d.setDate(d.getDate()-i);const dd=S.days[mk(d)];if(dd)t+=dd.ch.c||0;}return t;}
+function mthCh(){let t=0;const n=new Date();Object.entries(S.days).forEach(([k,d])=>{const dk=new Date(k);if(dk.getFullYear()===n.getFullYear()&&dk.getMonth()===n.getMonth())t+=d.ch.c||0;});return t;}
+function ltCh(){return Object.values(S.days).reduce((a,d)=>a+(d.ch?d.ch.c||0:0),0);}
+function avgDS(){const v=Object.values(S.days).filter(d=>d.ds>0).map(d=>d.ds);return v.length?Math.round(v.reduce((a,x)=>a+x,0)/v.length):0;}
+
+// TOAST
+let toastT;
+function toast(msg){const e=$('toast');e.textContent=msg;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
+
+// DEMO SEED
+// INIT
+load();applyNavVis();renderHome();renderJ();
+// Live clock
+function updateClock(){
+  const now=new Date();const h=String(now.getHours()).padStart(2,'0');const m=String(now.getMinutes()).padStart(2,'0');
+  const cl=$('liveclock');if(cl)cl.textContent=h+':'+m;
+  const avs=S.set.as||'03:00',ave=S.set.ae||'06:00';
+  const t=now.getHours()*60+now.getMinutes();
+  const [sh,sm2]=avs.split(':').map(Number);const [eh,em]=ave.split(':').map(Number);
+  const startMin=sh*60+sm2,endMin=eh*60+em;
+  const inAV=startMin<=endMin?(t>=startMin&&t<endMin):(t>=startMin||t<endMin);
+  const tag=$('avtag');if(tag){tag.textContent=inAV?'✦ Amrit Vela ✦':'';tag.style.color=inAV?'var(--p)':'transparent';}
+}
+// REMINDERS — best-effort, in-app only. There's no background server/service worker here,
+// so these can only fire while this tab/app is actually open, not when fully closed.
+let avAlertedDate=null,spAlertedDate=null;
+function checkReminders(){
+  const en=S.set.en||DEN;const now=new Date();const todayKey=mk(now);const t=now.getHours()*60+now.getMinutes();
+  if(en.rm_av!==false){
+    const avs=S.set.as||'03:00';const[sh,sm2]=avs.split(':').map(Number);const startMin=sh*60+sm2;
+    if(t===startMin&&avAlertedDate!==todayKey){avAlertedDate=todayKey;toast('✦ Amrit Vela has begun ✦');}
+  }
+  if(en.rm_sp!==false&&now.getHours()>=21&&spAlertedDate!==todayKey){
+    if(getNeeds(gd()).length>0){spAlertedDate=todayKey;toast('⚠ Your streak is at risk — log today\'s practices');}
+  }
+}
+updateClock();checkReminders();setInterval(()=>{updateClock();checkReminders();},30000);
+</script>
+</body>
+</html>
